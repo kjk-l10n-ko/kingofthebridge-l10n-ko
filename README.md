@@ -27,8 +27,6 @@
 | [Galmuri11 Bold](https://github.com/quiple/galmuri) | 이민서 (Lee Minseo) | [OFL 1.1](assets/fonts/LICENSE.txt) |
 | [그리운 육공이체 (Griun 602)](https://www.griun.co.kr/fonts/602) | 그리운 (Griun) | [라이선스](assets/fonts/LICENSE-Griun602.txt) |
 
-* 그리운 육공이체 (Griun 602): 규칙서·목차 그림 속 글자에 사용. 폰트 사용범위: 모든 사용 범위에서 자유롭게 사용이 가능합니다. 다만, 폰트파일 개작·수정·판매는 금지됩니다. (이 패치는 글꼴 파일을 포함하지 않음)
-
 ## 라이선스
 
 * 본 패치는 팬 번역이며 판매·유료 재배포를 금지함.

@@ -1,8 +1,8 @@
-그리운 육공이체 (Griun 602) - Copyright (c) Griun (그리운). https://www.griun.co.kr/fonts/602
-License (그리운 free font terms)
+그리운 육공이체 (Griun 602)
+Copyright (c) 그리운 (Griun). All rights reserved.
+출처: https://www.griun.co.kr/fonts/602
 
-폰트 사용범위
+폰트 사용범위 (그리운 free font terms)
+
 모든 사용 범위에서 자유롭게 사용이 가능합니다.
-다만, 폰트파일 개작·수정·판매는 금지됩니다.
-
-이 패치는 글꼴 파일을 포함하지 않으며, 이 글꼴로 그린 그림(규칙서·목차 텍스처)만 포함합니다.
+다만, 폰트파일 개작⋅수정⋅판매는 금지됩니다.
