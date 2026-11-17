@@ -25,7 +25,7 @@ SRC = os.environ.get("PAGES_SRC_DIR", SRC)
 PREV = os.environ.get("PAGES_PREV_DIR", PREV)
 SPEC = os.environ.get("PAGES_SPEC_DIR", SPEC)
 OUT = os.environ.get("PAGES_OUT_DIR", OUT)
-FONT = os.path.join(ROOT, "assets/fonts/KangBujangnim.ttf")
+FONT = os.path.join(ROOT, "assets/fonts/Griun602.ttf")
 
 
 def nl_name(en):

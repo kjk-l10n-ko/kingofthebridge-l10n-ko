@@ -1,7 +1,7 @@
 """Unified renderer for the 68 TOC entry textures (replaces the per-agent specs' text rendering).
 Geometry (erase rects, start point and tilt of each text line) comes from assets/links_spec/<name>.json (the boxes'
 patches); the text of every line and ALL typography comes from here, so every entry looks the same:
-  font KangBujangnim, one size (shrunk only to stay left of the right bracket), 4x supersampled, alpha gamma 0.6, no bold.
+  font Griun 602, one size (shrunk only to stay left of the right bracket), 4x supersampled, alpha gamma 0.6, no bold.
   python3 scripts/links_render.py [name ...]  ->  assets/links/<name>.png"""
 import json, math, os, sys
 from PIL import Image, ImageDraw, ImageFont
@@ -11,7 +11,7 @@ import patch as P, warp as W
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC, SPEC, OUT = (os.path.join(ROOT, "assets", d) for d in ("links_src", "links_spec", "links"))
-FONT = os.path.join(ROOT, "assets/fonts/KangBujangnim.ttf")
+FONT = os.path.join(ROOT, "assets/fonts/Griun602.ttf")
 SIZE, MIN_SIZE, SS, GAMMA, RIGHT = 13, 11, 4, 0.6, 137
 
 

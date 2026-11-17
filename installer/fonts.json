@@ -7,10 +7,10 @@
   "family": "Galmuri"
  },
  {
-  "name": "강부장님체",
-  "author": "네이버 (NAVER Corp.)",
-  "url": "https://clova.ai/handwriting/list.html",
-  "license_file": "assets/fonts/LICENSE-KangBujangnim.txt",
-  "note": "규칙서·목차 그림 속 글자에 사용 (그림 파일로만 포함, 글꼴 파일은 포함하지 않음)"
+  "name": "그리운 육공이체 (Griun 602)",
+  "author": "그리운 (Griun)",
+  "url": "https://www.griun.co.kr/fonts/602",
+  "license_file": "assets/fonts/LICENSE-Griun602.txt",
+  "note": "규칙서·목차 그림 속 글자에 사용 (그림으로만 포함, 글꼴 파일은 포함하지 않음)"
  }
 ]

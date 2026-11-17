@@ -1,7 +1,7 @@
 """TextBox: fit/wrap Korean (or mixed) text into a w x h box, render it flat, and
 edit it WYSIWYG in a browser served from here.
 
-  textbox.py fit --w 130 --h 90 --text '...' --font assets/fonts/KangBujangnim.ttf \
+  textbox.py fit --w 130 --h 90 --text '...' --font assets/fonts/Griun602.ttf \
                  --out out/box.png --json out/box.json
   textbox.py serve [--port 8765]        # http://127.0.0.1:8765/ -> editor.html
   textbox.py --selftest
@@ -19,7 +19,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 HERE = os.path.dirname(os.path.abspath(__file__))
-FONT = os.path.join(ROOT, "assets/fonts/KangBujangnim.ttf")
+FONT = os.path.join(ROOT, "assets/fonts/Griun602.ttf")
 FIXTURES = os.path.join(HERE, "wrap_fixtures.json")
 PAGE_SRC = os.path.join(ROOT, "assets/pages_src")
 BOXDIR = os.path.join(ROOT, "assets/pages_box")
@@ -297,7 +297,7 @@ def selftest():
     try:
         html = urllib.request.urlopen(base + "/").read().decode()
         assert "wrap_fixtures.json" in html and "<canvas" in html
-        ttf = urllib.request.urlopen(base + "/fonts/KangBujangnim.ttf").read()
+        ttf = urllib.request.urlopen(base + "/fonts/Griun602.ttf").read()
         assert ttf[:4] == b"\x00\x01\x00\x00" and len(ttf) > 10000
         assert len(json.loads(urllib.request.urlopen(base + "/pages").read())) > 0
         assert len(json.loads(urllib.request.urlopen(base + "/wrap_fixtures.json").read())) == len(fx)

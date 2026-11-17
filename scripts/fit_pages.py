@@ -28,6 +28,9 @@ def wrap(text, size, width):
             else:
                 cur = t
         out.append(cur)
+    if len(out) > 1 and len(out[-1].replace(" ", "")) <= 3 and " " in out[-2]:  # no 1-2 syllable orphan line
+        head, last = out[-2].rsplit(" ", 1)
+        out[-2:] = [head, last + " " + out[-1]]
     return "\n".join(out)
 
 
@@ -85,6 +88,11 @@ def is_title(i, t):
     return i == 0 and (t.get("size", 0) >= 22 or re.match(r"^(규칙|사실|에필로그|고발|목차)", t["text"]) is not None) and "\n" not in t["text"]
 
 
+def orphan(text):
+    l = text.split("\n")
+    return len(l) > 1 and len(l[-1].replace(" ", "")) <= 3
+
+
 def main(names):
     for n in names:
         if n in SKIP:
@@ -95,8 +103,8 @@ def main(names):
             zone = LEFT if t["xy"][0] < 160 else RIGHT
             title = is_title(i, t)
             want = WANT.get(n) or (t["size"] if n in KEEP else 26 if title else BODY)
-            obs = obstacles_for(n, d, i)
-            if fits(t, zone, obs) and t["size"] == want:
+            obs = None if title else obstacles_for(n, d, i)  # a title replaces the English title in place
+            if fits(t, zone, obs) and t["size"] == want and not orphan(t["text"]):
                 continue
             texts[i] = fit(t, zone, want, obs)
             print(n, i, t["size"], "->", texts[i]["size"])

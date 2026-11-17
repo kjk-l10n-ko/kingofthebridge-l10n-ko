@@ -6,7 +6,7 @@ from PIL import ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SPEC = os.path.join(ROOT, "assets/pages_spec")
-FONT = os.path.join(ROOT, "assets/fonts/KangBujangnim.ttf")
+FONT = os.path.join(ROOT, "assets/fonts/Griun602.ttf")
 SKIP = {"page_31", "page_contents0", "page_contents1", "secretpage1_dutch", "secretpage2_dutch", "page_t2", "page_19", "page_25"}
 TITLE, BODY, LINE = 26, 16, 1.3
 

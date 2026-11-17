@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import patch as P
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-FONT = os.path.join(ROOT, "assets", "fonts", "KangBujangnim.ttf")
+FONT = os.path.join(ROOT, "assets", "fonts", "Griun602.ttf")
 BG = (34, 40, 40, 255)
 
 
