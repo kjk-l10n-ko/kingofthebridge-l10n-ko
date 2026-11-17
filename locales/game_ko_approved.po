@@ -128,7 +128,7 @@ msgstr "성"
 #, fuzzy
 msgctxt "ChessTable/310346282196992"
 msgid "+1 Scrap!"
-msgstr "+1 고철!"
+msgstr "+1 조각!"
 
 #. nl: betrapte de ander niet op valsspelen?
 #, fuzzy
