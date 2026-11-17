@@ -1196,7 +1196,7 @@ msgstr "품위 없게 두는군..."
 msgctxt "TrollDialogTable/7777232117760"
 msgid ""
 "This is it! Get ready for the eleventh edition of advanced troll chess!"
-msgstr "바로 이거야! 고급 트롤 체스 제11판을 시작하지!"
+msgstr "드디어 시작이다! 고급 트롤 체스 개정 11판, 각오해라!"
 
 #. nl: Aan je rechterhand vind je het bedacht samengestelde regelboek.
 #, fuzzy
