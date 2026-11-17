@@ -458,7 +458,7 @@ msgstr "그리고 반칙을 총 {cheatCount}번 했습니다."
 #, fuzzy
 msgctxt "CreditsTable/19446378631168"
 msgid "A GAME BY FINN SCHUURING"
-msgstr "핀 스휴링 제작"
+msgstr "FINN SCHUURING 제작"
 
 #. nl: AANVULLEND ONTWERP
 #. ILSE BAARS
@@ -473,11 +473,11 @@ msgid ""
 "MERIJN TRIMBOS\r\n"
 "RANDY QUERREVELD\r"
 msgstr ""
-"추가 디자인\r\n"
+"추가 디자인\n"
 "\r\n"
-"일서 바르스\r\n"
-"메레인 트림보스\r\n"
-"랜디 퀴레르펠트\r"
+"ILSE BAARS\r\n"
+"MERIJN TRIMBOS\r\n"
+"RANDY QUERREVELD\r"
 
 #. nl: MET DANK AAN
 #. CATHY VAN DE LAAK
@@ -490,10 +490,10 @@ msgid ""
 "CATHY VAN DE LAAK\r\n"
 "JANDIRK VAN DINGENEN\r"
 msgstr ""
-"특별 감사\r\n"
+"특별 감사\n"
 "\r\n"
-"캐시 판 데 라크\r\n"
-"얀디르크 판 딩에넨\r"
+"CATHY VAN DE LAAK\r\n"
+"JANDIRK VAN DINGENEN\r"
 
 #. nl: MET DANK AAN
 #. FRANK SCHUURING
@@ -510,12 +510,12 @@ msgid ""
 "JOEP SCHUURING\r\n"
 "BRAM SCHUURING\r"
 msgstr ""
-"특별 감사\r\n"
+"특별 감사\n"
 "\r\n"
-"프랑크 스휴링\r\n"
-"일랴 스휴링\r\n"
-"윱 스휴링\r\n"
-"브람 스휴링\r"
+"FRANK SCHUURING\r\n"
+"ILJA SCHUURING\r\n"
+"JOEP SCHUURING\r\n"
+"BRAM SCHUURING\r"
 
 #. nl: MET DANK AAN
 #. ORION KEREN PUTS
@@ -534,13 +534,13 @@ msgid ""
 "MAXYM EBELING\r\n"
 "BENITO VAN DER ZANDEN\r"
 msgstr ""
-"특별 감사\r\n"
+"특별 감사\n"
 "\r\n"
-"오리온 케렌 푸츠\r\n"
-"다비트 콜프\r\n"
-"위러 데 흐롯\r\n"
-"막심 에벨링\r\n"
-"베니토 판 데르 잔덴\r"
+"ORION KEREN PUTS\r\n"
+"DAVID KOLB\r\n"
+"JURRE DE GROOT\r\n"
+"MAXYM EBELING\r\n"
+"BENITO VAN DER ZANDEN\r"
 
 #. nl: MET DANK AAN
 #. ROEL VAN BROEKHOVEN
@@ -559,13 +559,13 @@ msgid ""
 "JORIS BELDER\r\n"
 "MILO DAMMERS\r"
 msgstr ""
-"특별 감사\r\n"
+"특별 감사\n"
 "\r\n"
-"룰 판 브루크호번\r\n"
-"칸 베이난트\r\n"
-"페파인 벨더르\r\n"
-"요리스 벨더르\r\n"
-"밀로 다머르스\r"
+"ROEL VAN BROEKHOVEN\r\n"
+"KAAN WIJNAND\r\n"
+"PEPIJN BELDER\r\n"
+"JORIS BELDER\r\n"
+"MILO DAMMERS\r"
 
 #. nl: Bedankt voor het spelen.
 #, fuzzy
@@ -590,9 +590,9 @@ msgstr ""
 "특별 감사\n"
 "\n"
 "\n"
-"카렐 밀레나르\n"
-"발렌테인 마위르르스\n"
-"디머 판 데르 하우트"
+"KAREL MILLENAAR\n"
+"VALENTIJN MUIJRERS\n"
+"DIMME VAN DER HOUT"
 
 #. nl: START
 #, fuzzy
