@@ -1370,13 +1370,13 @@ msgstr "내 실력이 부러운 거겠지..."
 #, fuzzy
 msgctxt "TrollDialogTable/9635128434688"
 msgid "Sorry, I left my cheating pants under the bridge!"
-msgstr "미안, 반칙 바지는 다리 밑에 두고 왔어!"
+msgstr "미안, 반칙 팬티는 다리 밑에 두고 왔어!"
 
 #. nl: In plaats daarvan draag ik mijn winnaars broek!
 #, fuzzy
 msgctxt "TrollDialogTable/9657312108544"
 msgid "Instead I am wearing my victory pants!"
-msgstr "대신 내가 승리 바지를 입고 있지!"
+msgstr "대신 승리의 팬티를 입고 있지!"
 
 #. nl: Oh daar heb je me!
 #, fuzzy
