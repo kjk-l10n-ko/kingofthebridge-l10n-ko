@@ -2,7 +2,8 @@
 
   export                       dump English pages to assets/pages_src/<nl name>.png (nl name = bundle texture name)
   render [name ...]            assets/pages_spec/<nl name>.json -> assets/pages/<nl name>.png (+ out/preview/<name>.png)
-spec json: {"erase": [[x,y,w,h] | <patch>, ...],
+spec json: {"lines": [{"x0":..,"y0":..,"x1":..,"y1":..,"width":1.6}] (strike-through strokes),
+            "erase": [[x,y,w,h] | <patch>, ...],
             "texts": [{"xy": [x,y], "text": "한 줄\n두 줄", "size": 20, "rot": -4, "line": 1.15}],
             "boxes": [{"patch": <patch>|null, "x":..,"y":..,"w":..,"h":..,"rot":..,
                        "text": "..", "size": null, "align": "center", "bold": 0}]}
@@ -97,6 +98,15 @@ def text_layer(t):
     return layer
 
 
+def line_layer(size, x0, y0, x1, y1, width=1.6, gamma=0.6):
+    """Antialiased straight stroke (3x supersampled), white on transparent."""
+    SS = 3
+    big = Image.new("L", (size[0] * SS, size[1] * SS), 0)
+    ImageDraw.Draw(big).line([(x0 * SS, y0 * SS), (x1 * SS, y1 * SS)], fill=255, width=max(1, int(round(width * SS))))
+    a = big.resize(size, Image.BOX).point(lambda v: int(255 * (v / 255) ** gamma + 0.5))
+    return Image.merge("RGBA", (Image.new("L", size, 255),) * 3 + (a,))
+
+
 def render(name):
     spec = json.load(open(f"{SPEC}/{name}.json", encoding="utf-8"))
     im = Image.open(f"{SRC}/{name}.png").convert("RGBA")
@@ -110,6 +120,8 @@ def render(name):
     for t in spec.get("texts", []):
         layer = text_layer(t)
         im.alpha_composite(layer, (max(0, t["xy"][0]), max(0, t["xy"][1])))
+    for ln in spec.get("lines", []):  # {"x0","y0","x1","y1","width"}: strike-through / underline strokes
+        im.alpha_composite(line_layer(im.size, ln["x0"], ln["y0"], ln["x1"], ln["y1"], ln.get("width", 1.6)))
     if spec.get("boxes"):
         patch, textbox, warp = _pagetools()
         for b in spec["boxes"]:
