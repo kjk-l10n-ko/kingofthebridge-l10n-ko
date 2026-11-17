@@ -52,7 +52,7 @@
 const cv = document.getElementById("cv"), ctx = cv.getContext("2d");
 const mcv = document.createElement("canvas"), mctx = mcv.getContext("2d");
 const $ = id => document.getElementById(id);
-const S = {scale: 2, page: null, img: null, boxes: [], sel: -1, font: "Gaegu-Bold.ttf", fontok: false};
+const S = {scale: 2, page: null, img: null, boxes: [], sel: -1, font: "KangBujangnim.ttf", fontok: false};
 
 // ---------- wrap: faithful port of textbox.py wrap() ----------
 const PUNCT = ".,!?:;)]}、。…·%", WORDISH = /[A-Za-z0-9'’-]/;
@@ -317,7 +317,7 @@ async function j(url, opt) { const r = await fetch(url, opt); if (!r.ok) throw n
 async function boot() {
   const [fonts, pages, files, boxes] = await Promise.all(
     [j("/fonts"), j("/pages"), j("/files").catch(() => []), j("/boxes").catch(() => [])]);
-  if (fonts.length) S.font = fonts.includes("Gaegu-Bold.ttf") ? "Gaegu-Bold.ttf" : fonts[0];
+  if (fonts.length) S.font = fonts.includes("KangBujangnim.ttf") ? "KangBujangnim.ttf" : fonts[0];
   const ff = new FontFace("pagefont", `url(/fonts/${encodeURIComponent(S.font)})`);
   await ff.load(); document.fonts.add(ff); S.fontok = true;
   wcache.clear();

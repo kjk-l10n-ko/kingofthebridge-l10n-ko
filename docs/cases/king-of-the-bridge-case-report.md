@@ -22,10 +22,13 @@
 - Page text: game shows page sprites with Point filter; 1px antialiased strokes break up. Text is 1px dilated by default (`texts[].bold`), titles 26px, body <=16px (`scripts/normalize_pages.py`). `scripts/preview_pages.py` makes game-like contact sheets without launching the game.
 
 ## Rulebook page tools (`scripts/pagetools/`)
-`shapes.py` (ink -> Coons patch with cubic Bezier edges / outline), `textbox.py` + `editor.html` (fit + wrap Korean into a box, WYSIWYG), `warp.py` (flat text -> patch), `pages.py` `boxes`/patch `erase`. Page specs: `assets/pages_spec/*.json` (+ `.txt` EN/KO). Body size is 15-18 px (Gaegu Bold); Korean is wider than English caps.
+`shapes.py` (ink -> Coons patch with cubic Bezier edges / outline), `textbox.py` + `editor.html` (fit + wrap Korean into a box, WYSIWYG), `warp.py` (flat text -> patch), `pages.py` `boxes`/patch `erase`. Page specs: `assets/pages_spec/*.json` (+ `.txt` EN/KO). Body size is 15-18 px (강부장님체); Korean is wider than English caps.
 
 ## Verification
 - PO: 327 entries, validate OK. Build: `pages replaced: 42`; 0 TMP glyph warnings, 0 exceptions in `Player.log`.
 - In game: Korean menu (시작/추가/설정/종료), tutorial screen with Korean rulebook page ("고발" page, 3 steps) and "[ SPACE ] 고발".
 - Installer exe: install -> all 5 files `sha256 == sha256_patched`; `--uninstall` -> all `sha256_original`, `kor_bak` removed.
 - Not checked in game: every rulebook page individually, secret pages, credits.
+
+## Font / typography decision (user review of in-game screenshots)
+- Bold/dilation clogs Hangul at 11-16px in game (blobs); Gaegu Bold was replaced by 강부장님체 (NAVER, `assets/fonts/KangBujangnim.ttf`), no bold. Page text: 3x supersampled + alpha gamma 0.6 (`pages.py`), TOC entries: one unified renderer `scripts/links_render.py` (same font/size/tilt for all 68; geometry for two-line entries copied from entry 00, per-agent specs only supply erase rects and text). Different per-agent techniques gave visibly different weights per entry — render every entry of a set with ONE script.

@@ -11,8 +11,7 @@ spec json: {"erase": [[x,y,w,h] | <patch>, ...],
   boxes: text laid out (scripts/pagetools/textbox.py) into a w x h flat render, then warped
   through the Coons patch (rect_patch(x,y,w,h,rot) when "patch" is null).
   env: PAGES_SRC_DIR / PAGES_SPEC_DIR / PAGES_OUT_DIR / PAGES_PREV_DIR override the dirs (tests, previews, TOC link textures).
-  texts: "bold" (default 1) thickens the strokes by 1px; the game shows the page at a non-integer
-  scale and 1px Gaegu strokes break up (missing pixels) without it.
+  texts: drawn 3x supersampled; "gamma" (default 0.6) lifts thin antialiased strokes. No bold/dilation (it clogs Hangul in game).
 """
 import json, os, re, sys
 import UnityPy
@@ -26,7 +25,7 @@ SRC = os.environ.get("PAGES_SRC_DIR", SRC)
 PREV = os.environ.get("PAGES_PREV_DIR", PREV)
 SPEC = os.environ.get("PAGES_SPEC_DIR", SPEC)
 OUT = os.environ.get("PAGES_OUT_DIR", OUT)
-FONT = os.path.join(ROOT, "assets/fonts/Gaegu-Bold.ttf")
+FONT = os.path.join(ROOT, "assets/fonts/KangBujangnim.ttf")
 
 
 def nl_name(en):
@@ -91,17 +90,21 @@ def render(name):
             x, y, w, h = e
             im.paste((0, 0, 0, 0), (x, y, x + w, y + h))
     for t in spec.get("texts", []):
-        font = ImageFont.truetype(FONT, t.get("size", 20))
+        # 3x supersampled draw+rotate, box downsample, then an alpha gamma boost: crisp 1px-ish strokes without dilation
+        SS = 3
+        size = t.get("size", 20)
+        font = ImageFont.truetype(FONT, size * SS)
         lines = t["text"].split("\n")
-        step = int(t.get("size", 20) * t.get("line", 1.15))
-        w = max(int(font.getlength(l)) for l in lines) + 8
-        layer = Image.new("RGBA", (w, step * len(lines) + 8), (0, 0, 0, 0))
+        step = int(size * SS * t.get("line", 1.15))
+        w = max(int(font.getlength(l)) for l in lines) + 8 * SS
+        layer = Image.new("RGBA", (w, step * len(lines) + 8 * SS), (255, 255, 255, 0))
         dr = ImageDraw.Draw(layer)
         for i, l in enumerate(lines):
-            dr.text((4, 4 + i * step), l, font=font, fill=(255, 255, 255, 255))
+            dr.text((4 * SS, 4 * SS + i * step), l, font=font, fill=(255, 255, 255, 255))
         layer = layer.rotate(t.get("rot", 0), expand=True, resample=Image.BICUBIC)
-        if t.get("bold", 1):
-            layer.putalpha(layer.getchannel("A").filter(ImageFilter.MaxFilter(3)))
+        layer = layer.resize((max(1, layer.width // SS), max(1, layer.height // SS)), Image.BOX)
+        a = layer.getchannel("A").point(lambda v: int(255 * (v / 255) ** t.get("gamma", 0.6) + 0.5))
+        layer.putalpha(a)
         im.alpha_composite(layer, (max(0, t["xy"][0]), max(0, t["xy"][1])))
     if spec.get("boxes"):
         patch, textbox, warp = _pagetools()
