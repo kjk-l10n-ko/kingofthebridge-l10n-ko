@@ -10,3 +10,10 @@ __pycache__/
 *.pyc
 # translating-po 작업 폴더 (배치/결과 JSON)
 locales/.translate/
+# 게임 원본 그림(추출물)과 그 위에 그린 렌더 결과물 -- 게임 데이터라 커밋하지 않는다. 재생성:
+#   python3 scripts/pages.py export && python3 scripts/links.py export
+#   python3 scripts/pages.py render && python3 scripts/links_render.py
+assets/pages_src/
+assets/pages/
+assets/links_src/
+assets/links/
