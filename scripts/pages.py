@@ -79,6 +79,24 @@ def _render_box(im, b, patch, textbox, warp):
     im.alpha_composite(warp.warp(flat, p, im.size))
 
 
+def text_layer(t):
+    """3x supersampled draw+rotate, box downsample, alpha gamma boost: crisp thin strokes without dilation."""
+    SS = 3
+    size = t.get("size", 20)
+    font = ImageFont.truetype(FONT, int(round(size * SS)))
+    lines = t["text"].split("\n")
+    step = int(size * SS * t.get("line", 1.15))
+    w = max(int(font.getlength(l)) for l in lines) + 8 * SS
+    layer = Image.new("RGBA", (w, step * len(lines) + 8 * SS), (255, 255, 255, 0))
+    dr = ImageDraw.Draw(layer)
+    for i, l in enumerate(lines):
+        dr.text((4 * SS, 4 * SS + i * step), l, font=font, fill=(255, 255, 255, 255))
+    layer = layer.rotate(t.get("rot", 0), expand=True, resample=Image.BICUBIC)
+    layer = layer.resize((max(1, layer.width // SS), max(1, layer.height // SS)), Image.BOX)
+    layer.putalpha(layer.getchannel("A").point(lambda v: int(255 * (v / 255) ** t.get("gamma", 0.6) + 0.5)))
+    return layer
+
+
 def render(name):
     spec = json.load(open(f"{SPEC}/{name}.json", encoding="utf-8"))
     im = Image.open(f"{SRC}/{name}.png").convert("RGBA")
@@ -90,21 +108,7 @@ def render(name):
             x, y, w, h = e
             im.paste((0, 0, 0, 0), (x, y, x + w, y + h))
     for t in spec.get("texts", []):
-        # 3x supersampled draw+rotate, box downsample, then an alpha gamma boost: crisp 1px-ish strokes without dilation
-        SS = 3
-        size = t.get("size", 20)
-        font = ImageFont.truetype(FONT, size * SS)
-        lines = t["text"].split("\n")
-        step = int(size * SS * t.get("line", 1.15))
-        w = max(int(font.getlength(l)) for l in lines) + 8 * SS
-        layer = Image.new("RGBA", (w, step * len(lines) + 8 * SS), (255, 255, 255, 0))
-        dr = ImageDraw.Draw(layer)
-        for i, l in enumerate(lines):
-            dr.text((4 * SS, 4 * SS + i * step), l, font=font, fill=(255, 255, 255, 255))
-        layer = layer.rotate(t.get("rot", 0), expand=True, resample=Image.BICUBIC)
-        layer = layer.resize((max(1, layer.width // SS), max(1, layer.height // SS)), Image.BOX)
-        a = layer.getchannel("A").point(lambda v: int(255 * (v / 255) ** t.get("gamma", 0.6) + 0.5))
-        layer.putalpha(a)
+        layer = text_layer(t)
         im.alpha_composite(layer, (max(0, t["xy"][0]), max(0, t["xy"][1])))
     if spec.get("boxes"):
         patch, textbox, warp = _pagetools()
