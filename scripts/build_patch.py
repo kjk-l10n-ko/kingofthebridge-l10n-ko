@@ -84,6 +84,30 @@ def patch_tables(game, out):
     write(out, TABLES, env.file.save(packer="lz4"))
 
 
+def full_rect_sprite(o):
+    """Sprites were imported with a Tight mesh hugging the ENGLISH ink, so Korean outside that outline is clipped in game.
+    Replace the mesh with a full-rect quad (positions only; Unity derives UVs from textureRect)."""
+    import struct
+    t = o.read_typetree()
+    rd = t["m_RD"]
+    w, h, ppu = t["m_Rect"]["width"], t["m_Rect"]["height"], t["m_PixelsToUnits"]
+    px, py = t["m_Pivot"]["x"] * w, t["m_Pivot"]["y"] * h
+    x0, x1, y0, y1 = -px / ppu, (w - px) / ppu, -py / ppu, (h - py) / ppu
+    vd = rd["m_VertexData"]
+    old, n = bytes(vd["m_DataSize"]), vd["m_VertexCount"]
+    stride1 = (len(old) - ((n * 12 + 15) // 16) * 16) // n  # stream 1 (uv/blend, zeros in these sprites)
+    s0 = b"".join(struct.pack("<3f", x, y, 0.0) for x, y in ((x0, y1), (x1, y1), (x1, y0), (x0, y0)))
+    vd["m_DataSize"] = s0 + bytes(4 * stride1)
+    vd["m_VertexCount"] = 4
+    rd["m_IndexBuffer"] = struct.pack("<6H", 0, 1, 2, 0, 2, 3)  # same (clockwise) winding as Unity's mesh
+    sm = rd["m_SubMeshes"][0]
+    sm.update(firstByte=0, indexCount=6, baseVertex=0, firstVertex=0, vertexCount=4)
+    rd["m_SubMeshes"] = [sm]
+    rd["textureRect"] = {"x": 0.0, "y": 0.0, "width": float(w), "height": float(h)}
+    rd["textureRectOffset"] = {"x": 0.0, "y": 0.0}
+    o.save_typetree(t)
+
+
 def patch_pages(game, out):
     from PIL import Image
     env = UnityPy.load(src(game, PAGES))
@@ -96,6 +120,10 @@ def patch_pages(game, out):
                 d.image = Image.open(f).convert("RGBA")
                 d.save()
                 hit += 1
+    names = {os.path.basename(f)[:-4] for f in os.listdir(PAGE_DIR) if f.endswith(".png")}
+    for o in env.objects:
+        if o.type.name == "Sprite" and o.read().m_Name in names:
+            full_rect_sprite(o)
     print("pages replaced:", hit)
     write(out, PAGES, env.file.save(packer="lz4"))
 
@@ -115,6 +143,9 @@ def patch_links(game, out):
                 d.image = im
                 d.save()
                 hit += 1
+    for o in env.objects:
+        if o.type.name == "Sprite" and o.read().m_Name.startswith("link_"):
+            full_rect_sprite(o)
     print("link textures replaced:", hit)
     write(out, SHARED2, env.file.save())
 
