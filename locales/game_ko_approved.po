@@ -134,85 +134,85 @@ msgstr "+1 고철!"
 #, fuzzy
 msgctxt "RuleBreakTable/15907446784"
 msgid "did not catch the other cheating?"
-msgstr "상대방의 속임수를 잡아내지 못했습니까?"
+msgstr "상대의 속임수를 잡아내지 못했나?"
 
 #. nl: heeft de ander verkeerd beschuldigd?
 #, fuzzy
 msgctxt "RuleBreakTable/134396534784"
 msgid "falsely accused the other of cheating?"
-msgstr "상대방을 속임수로 잘못 고발했습니까?"
+msgstr "상대를 속임수로 잘못 고발했나?"
 
 #. nl: was bewogen door de verkeerde kleur.
 #, fuzzy
 msgctxt "RuleBreakTable/174242422784"
 msgid "was moved by the wrong color."
-msgstr "잘못된 진영에 의해 움직였습니다."
+msgstr "잘못된 색이 움직였다."
 
 #. nl: was ook een koningin?
 #, fuzzy
 msgctxt "RuleBreakTable/286075150336"
 msgid "Was also a queen?"
-msgstr "퀸이기도 했습니까?"
+msgstr "퀸이기도 했나?"
 
 #. nl: bewoog groot denkend.
 #, fuzzy
 msgctxt "RuleBreakTable/329419087872"
 msgid "Moved big minded."
-msgstr "대범하게 움직였습니다."
+msgstr "대범하게 움직였다."
 
 #. nl: was geen metafoor?
 #, fuzzy
 msgctxt "RuleBreakTable/404241276928"
 msgid "was not a metaphor?"
-msgstr "은유가 아니었습니까?"
+msgstr "은유가 아니었나?"
 
 #. nl: heeft terug verkeerd begrepen.
 #, fuzzy
 msgctxt "RuleBreakTable/451557220352"
 msgid "has wrongly defined backwards."
-msgstr "뒤를 잘못 정의했습니다."
+msgstr "뒤를 잘못 정의했다."
 
 #. nl: draafde en galoppeerde niet.
 #, fuzzy
 msgctxt "RuleBreakTable/537435594752"
 msgid "Did not trot, canter or gallop."
-msgstr "속보, 구보, 습보를 하지 않았습니다."
+msgstr "속보, 구보, 습보를 하지 않았다."
 
 #. nl: hinnikt.
 #, fuzzy
 msgctxt "RuleBreakTable/592620052480"
 msgid "neighs."
-msgstr "히힝 울었습니다."
+msgstr "히힝 울었다."
 
 #. nl: sprong waar alleen hij mag springen.
 #, fuzzy
 msgctxt "RuleBreakTable/658911027200"
 msgid "jumped when only he can jump."
-msgstr "그만 뛸 수 있는데 뛰었습니다."
+msgstr "오직 그만 뛸 수 있는데 뛰었다."
 
 #. nl: stierf en zwart wint het spel?
 #, fuzzy
 msgctxt "RuleBreakTable/704909959168"
 msgid "died and black wins the game?"
-msgstr "죽어서 흑이 승리했습니까?"
+msgstr "죽어서 흑이 승리했나?"
 
 #. nl: steunde de monarchie niet?
 #, fuzzy
 msgctxt "RuleBreakTable/787487416320"
 msgid "did not support the monarchy?"
-msgstr "군주제를 지지하지 않았습니까?"
+msgstr "군주제를 지지하지 않았나?"
 
 #. nl: leek niet lui.
 #, fuzzy
 msgctxt "RuleBreakTable/871147003904"
 msgid "did not seem lazy."
-msgstr "게으르지 않았던 것 같다."
+msgstr "게으르지 않아 보였다."
 
 #. nl: reisde in de richting van + .
 #, fuzzy
 msgctxt "RuleBreakTable/947449782272"
 msgid "traveled in the direction of + ."
-msgstr " + 방향으로 이동했다."
+msgstr "+ 방향으로 이동했다."
 
 #. nl: reisde in de richting van x .
 #, fuzzy
@@ -224,115 +224,115 @@ msgstr "x 방향으로 이동했다."
 #, fuzzy
 msgctxt "RuleBreakTable/1109832261632"
 msgid "did not get supper?"
-msgstr "저녁을 못 받았나?"
+msgstr "저녁을 못 먹었나?"
 
 #. nl: smolt niet samen tot kasteel.
 #, fuzzy
 msgctxt "RuleBreakTable/1157223702528"
 msgid "did not merge into a castle."
-msgstr "캐슬링으로 합쳐지지 않았습니다."
+msgstr "성으로 합쳐지지 않았다."
 
 #. nl: genereerde geen valorite brokken.
 #, fuzzy
 msgctxt "RuleBreakTable/1220893237248"
 msgid "Did not generate valorite scraps."
-msgstr "발로라이트 조각을 생성하지 않았습니다."
+msgstr "발로라이트 조각을 만들지 않았다."
 
 #. nl: heeft dans etiquette gemist?
 #, fuzzy
 msgctxt "RuleBreakTable/1267508731904"
 msgid "does not know move etiquette."
-msgstr "무브 예절을 모릅니다."
+msgstr "이동 예절을 모른다."
 
 #. nl: dateert terug naar de gerimpelde jaren.
 #, fuzzy
 msgctxt "RuleBreakTable/1357317169152"
 msgid "dates back to the wrinkled ages."
-msgstr "주름진 시대까지 거슬러 올라갑니다."
+msgstr "주름진 시대까지 거슬러 올라간다."
 
 #. nl: is niet opgestegen toen het vereist werd.
 #, fuzzy
 msgctxt "RuleBreakTable/1404586975232"
 msgid "did not ascend when they should have."
-msgstr "승천해야 할 때 승천하지 않았습니다."
+msgstr "승천해야 할 때 승천하지 않았다."
 
 #. nl: draaide niet horizontaal om.
 #, fuzzy
 msgctxt "RuleBreakTable/1453907795968"
 msgid "did not flip horizontally."
-msgstr "수평으로 뒤집지 않았습니다."
+msgstr "수평으로 뒤집지 않았다."
 
 #. nl: vergat een cadeautje mee te nemen.
 #, fuzzy
 msgctxt "RuleBreakTable/1496203157504"
 msgid "forgot to bring a gift."
-msgstr "선물을 가져오는 걸 잊었습니다."
+msgstr "선물을 가져오는 걸 잊었다."
 
 #. nl: verstelde niet hun aanvalskracht.
 #, fuzzy
 msgctxt "RuleBreakTable/1546438336512"
 msgid "did not adjust their damage power."
-msgstr "공격력을 조정하지 않았습니다."
+msgstr "공격력을 조정하지 않았다."
 
 #. nl: stapte te dicht op een ander.
 #, fuzzy
 msgctxt "RuleBreakTable/1627963023360"
 msgid "stepped too close to one another."
-msgstr "서로 너무 가까이 다가갔습니다."
+msgstr "서로 너무 가까이 다가갔다."
 
 #. nl: werkt niet buiten het dorp.
 #, fuzzy
 msgctxt "RuleBreakTable/1670069641216"
 msgid "did not work out of town."
-msgstr "마을 밖에서 일하지 않았습니다."
+msgstr "마을 밖에서 일하지 않았다."
 
 #. nl: was bewogen.
 #, fuzzy
 msgctxt "RuleBreakTable/1701182988288"
 msgid "was moved."
-msgstr "움직였습니다."
+msgstr "움직였다."
 
 #. nl: was niet glibberig.
 #, fuzzy
 msgctxt "RuleBreakTable/1755050434560"
 msgid "was not slippery."
-msgstr "미끄럽지 않았습니다."
+msgstr "미끄럽지 않았다."
 
 #. nl: kan niet tellen.
 #, fuzzy
 msgctxt "RuleBreakTable/1787195580416"
 msgid "is bad at counting."
-msgstr "세는 걸 못합니다."
+msgstr "세는 걸 못한다."
 
 #. nl: is vreemdgegaan.
 #, fuzzy
 msgctxt "RuleBreakTable/1845626429440"
 msgid "had an affair."
-msgstr "불륜을 저질렀습니다."
+msgstr "불륜을 저질렀다."
 
 #. nl: is niet vernoemd in het nawoord.
 #, fuzzy
 msgctxt "RuleBreakTable/1880854388736"
 msgid "Was not credited in the epilogue?"
-msgstr "에필로그에 언급되지 않았습니까?"
+msgstr "에필로그에 언급되지 않았나?"
 
 #. nl: doet niet eens hun best?
 #, fuzzy
 msgctxt "RuleBreakTable/2037050269696"
 msgid "Is not even trying?"
-msgstr "노력조차 하지 않습니까?"
+msgstr "노력조차 하지 않나?"
 
 #. nl: verdenkt de andere kleur niet?
 #, fuzzy
 msgctxt "RuleBreakTable/2131422109696"
 msgid "Does not suspect the other color?"
-msgstr "다른 진영을 의심하지 않습니까?"
+msgstr "다른 색을 의심하지 않나?"
 
 #. nl: begrijpt deze pagina niet?
 #, fuzzy
 msgctxt "RuleBreakTable/2234035757056"
 msgid "Does not understand this page?"
-msgstr "이 페이지를 이해하지 못합니까?"
+msgstr "이 페이지를 이해하지 못하나?"
 
 #. nl: is geen inhoud?
 #, fuzzy
@@ -813,7 +813,7 @@ msgstr "ESC 길게 눌러 종료..."
 #, fuzzy
 msgctxt "TrollDialogTable/306597879808"
 msgid "I thought you blinked..."
-msgstr "너 깜빡인 줄 알았는데..."
+msgstr "너, 눈 깜빡인 줄 알았는데..."
 
 #. nl: Nou, nou, nou...
 #, fuzzy
@@ -897,13 +897,13 @@ msgstr "끝없이."
 #, fuzzy
 msgctxt "TrollDialogTable/1582769397760"
 msgid "Go on then, cheat."
-msgstr "그럼 가봐라, 속임수꾼."
+msgstr "그럼 어디 속임수 써 봐."
 
 #. nl: Al deze beschuldigingen... Wat een verspilling van mijn tijd.
 #, fuzzy
 msgctxt "TrollDialogTable/1624641134592"
 msgid "All these accusations… It is a waste of my time."
-msgstr "이런 비난들은… 내 시간 낭비일 뿐이다."
+msgstr "이 모든 고발은… 내 시간 낭비일 뿐이다."
 
 #. nl: Waarom stel je je verlies toch uit?
 #, fuzzy
@@ -915,7 +915,7 @@ msgstr "어차피 질 판에 왜 질질 끄는 거야?"
 #, fuzzy
 msgctxt "TrollDialogTable/1680974831616"
 msgid "From the weakest depths…"
-msgstr "가장 나락의 깊은 곳에서…"
+msgstr "가장 깊은 나락에서…"
 
 #. nl: Kruip je...
 #, fuzzy
@@ -951,7 +951,7 @@ msgstr "겨우 작은 차질일 뿐이야."
 #, fuzzy
 msgctxt "TrollDialogTable/1926115123200"
 msgid "So, have your \"revenge\" now."
-msgstr "자, 그럼 이제 네 \"복수\"를 해 봐."
+msgstr "자, 그럼 이제 너의 \"보복\"을 해 봐."
 
 #. nl: Bedrieger! Bedrieger!
 #, fuzzy
@@ -963,7 +963,7 @@ msgstr "속임수꾼! 속임수꾼!"
 #, fuzzy
 msgctxt "TrollDialogTable/3429194293248"
 msgid "Did you think I was color blind?"
-msgstr "내가 색맹인 줄 알았나?"
+msgstr "내가 색맹인 줄 알았어?"
 
 #. nl: Gelukkig hebben we het regelboek ontworpen met kleurenblindheid in ons
 #. achterhoofd,
@@ -976,7 +976,7 @@ msgstr "다행히 규칙서는 색맹을 염두에 두고 만들었지,"
 #, fuzzy
 msgctxt "TrollDialogTable/5049038692352"
 msgid "I suggest you read it again."
-msgstr "다시 한번 읽어 보시지."
+msgstr "다시 읽어 보라고."
 
 #. nl: Hey die pionen bewegen niet zo!
 #, fuzzy
@@ -988,7 +988,7 @@ msgstr "이봐, 폰은 그렇게 못 움직여!"
 #, fuzzy
 msgctxt "TrollDialogTable/3640075509760"
 msgid "Did you think I wouldn't notice?"
-msgstr "내가 못 알아챌 줄 알았나?"
+msgstr "내가 못 알아챌 줄 알았어?"
 
 #. nl: Weet je,
 #, fuzzy
@@ -1006,7 +1006,7 @@ msgstr "속임수꾼!"
 #, fuzzy
 msgctxt "TrollDialogTable/3821516906496"
 msgid "And this was too elegant!"
-msgstr "그런데 이건 너무 우아했어!"
+msgstr "게다가 이건 너무 우아했어!"
 
 #. nl: Ik heb zes winters lang de elegantie van paardenjongens bestudeerd...
 #, fuzzy
@@ -1014,7 +1014,7 @@ msgctxt "TrollDialogTable/3810230034432"
 msgid ""
 "I actually studied horse guys for six winters to fully digest their "
 "elegance..."
-msgstr "난 사실 그 말 녀석들의 우아함을 온전히 음미하려고 여섯 겨울이나 연구했어..."
+msgstr "내가 말 녀석들의 우아함을 완전히 소화하려고 여섯 겨울 동안 연구했는데..."
 
 #. nl: Alleen hij kan springen!
 #, fuzzy
@@ -1026,7 +1026,7 @@ msgstr "저 녀석만 뛸 수 있어!"
 #, fuzzy
 msgctxt "TrollDialogTable/3924864557056"
 msgid "I thought the drawing made that awefully clear."
-msgstr "그림이 그걸 아주 명백하게 보여 준다고 생각했는데."
+msgstr "그림에서 그걸 아주 분명히 보여 준다고 생각했는데."
 
 #. nl: Valsspelen, zo recht voor mijn ogen...
 #, fuzzy
@@ -1038,7 +1038,7 @@ msgstr "내 눈앞에서 대놓고 속임수를 쓰다니..."
 #, fuzzy
 msgctxt "TrollDialogTable/4037867495424"
 msgid "\"Their crown weighs them down.\""
-msgstr "\"왕관이 그들의 몸을 무겁게 누르네.\""
+msgstr "\"왕관이 그들을 짓누르지.\""
 
 #. nl: Het rijmt zelfs!
 #, fuzzy
@@ -1062,7 +1062,7 @@ msgstr "하지만 그렇다고 규칙에 없는 움직임이 용서되진 않아
 #, fuzzy
 msgctxt "TrollDialogTable/4160110485504"
 msgid "Now I'll defeat you!"
-msgstr "이제 널 이기겠어!"
+msgstr "이제 내가 널 꺾어 주지!"
 
 #. nl: Dat is even te abstract, zelfs voor gevorderd trol schaken.
 #, fuzzy
@@ -1092,13 +1092,13 @@ msgstr "방금 퀸이 움직였는데,"
 #, fuzzy
 msgctxt "TrollDialogTable/4358563979264"
 msgid "But that was not in line with troll lore."
-msgstr "그건 트롤의 전승과 맞지 않았어."
+msgstr "그건 트롤 전승에 맞지 않아."
 
 #. nl: Te denken dat ik zo'n overduidelijke zet niet zou opmerken.
 #, fuzzy
 msgctxt "TrollDialogTable/4444106809344"
 msgid "To think I would not notice such an obvious move."
-msgstr "그렇게 뻔한 수를 내가 못 알아챌 줄이야."
+msgstr "그렇게 뻔한 수를 내가 못 알아챌 줄 알았다니."
 
 #. nl: Uhm...
 #, fuzzy
@@ -1134,7 +1134,7 @@ msgstr "상상도 못 할 일이지!"
 #, fuzzy
 msgctxt "TrollDialogTable/4589586243584"
 msgid "So you think you can just move the gifts over to your side..."
-msgstr "그래서 선물들을 네 쪽으로 그냥 옮기면 된다고 생각한 거야..."
+msgstr "그러니까 선물들을 너의 쪽으로 슬쩍 옮기면 된다고 생각한 거지..."
 
 #. nl: Dacht het even niet!
 #, fuzzy
@@ -1164,7 +1164,7 @@ msgstr "셋..."
 #, fuzzy
 msgctxt "TrollDialogTable/4694263488512"
 msgid "I do not count three towers in the game,"
-msgstr "게임에 탑은 셋이 아닌데,"
+msgstr "탑이 세 개로 안 보이는데,"
 
 #. nl: Je weet wel wat dat betekent.
 #, fuzzy
@@ -1182,13 +1182,13 @@ msgstr "안 돼! 안 돼! 안 돼!"
 #, fuzzy
 msgctxt "TrollDialogTable/4776484429824"
 msgid "It goes against troll lore! She would never have an affair!"
-msgstr "트롤 전승에 어긋나! 그 애가 바람을 피울 리 없어!"
+msgstr "트롤 전승에 어긋나! 그녀가 바람을 피울 리 없어!"
 
 #. nl: Je speelt op onsmakelijke spelwijzen.
 #, fuzzy
 msgctxt "TrollDialogTable/4787171516416"
 msgid "You play distastefully..."
-msgstr "맛이 없는 수를 두는군..."
+msgstr "품위 없게 두는군..."
 
 #. nl: Het moment is nu! Maak je klaar voor de elfde editie van gevorderd trol
 #. schaken!
@@ -1250,13 +1250,13 @@ msgstr "당장 날 돌려놔!"
 #, fuzzy
 msgctxt "TrollDialogTable/8493262725120"
 msgid "Get me off this chicken you cheater!"
-msgstr "이 닭에서 내려놔, 이 반칙꾼아!"
+msgstr "이 닭에서 날 내려놔, 이 속임수꾼아!"
 
 #. nl: Waag het niet om me dit aan te doen!
 #, fuzzy
 msgctxt "TrollDialogTable/8517757460480"
 msgid "Don't you dare do this to me!"
-msgstr "날 이렇게 만들 생각은 꿈도 꾸지 마!"
+msgstr "감히 나한테 이런 짓을 하지 마!"
 
 #. nl: Nee nee nee!
 #, fuzzy
@@ -1292,13 +1292,13 @@ msgstr "이 짐승에서 내릴 거야..."
 #, fuzzy
 msgctxt "TrollDialogTable/8718765285376"
 msgid "And when I do..."
-msgstr "그리곤..."
+msgstr "그러면..."
 
 #. nl: Zoek ik lekker een nieuwe brug!
 #, fuzzy
 msgctxt "TrollDialogTable/8731813765120"
 msgid "I'll find another bridge!"
-msgstr "새 다리를 찾을 거다!"
+msgstr "다른 다리를 찾을 거야!"
 
 #. nl: ...
 #, fuzzy
@@ -1328,13 +1328,13 @@ msgstr "괜한 짓 하지 마라!"
 #, fuzzy
 msgctxt "TrollDialogTable/9399815397376"
 msgid "You would accuse me of cheating?"
-msgstr "내가 속임수를 썼다고 의심하는 거냐?"
+msgstr "나를 속임수로 고발하겠다고?"
 
 #. nl: Dan neem ik mijn wraak!
 #, fuzzy
 msgctxt "TrollDialogTable/9447747903488"
 msgid "Well then I'll have my revenge!"
-msgstr "그럼 복수해 주마!"
+msgstr "그럼 보복해 주마!"
 
 #. nl: Nu meteen!
 #, fuzzy
@@ -1400,13 +1400,13 @@ msgstr "틀렸어."
 #, fuzzy
 msgctxt "TrollDialogTable/9783988477952"
 msgid "And you accuse me of cheating?"
-msgstr "그런데 네가 나한테 속임수를 쓴다고 하는 거야?"
+msgstr "그런데 나를 속임수꾼이라고 고발해?"
 
 #. nl: Hypocriet.
 #, fuzzy
 msgctxt "TrollDialogTable/9803101921280"
 msgid "Such hypocrisy."
-msgstr "참으로 위선적이군."
+msgstr "참 위선적이네."
 
 #. nl: Je ziet ook altijd het slechte in mensen, of niet dan?
 #, fuzzy
@@ -1430,7 +1430,7 @@ msgstr "내 킹을 잡으면 다리를 건널 수 있으리라 생각한다면,"
 #, fuzzy
 msgctxt "TrollDialogTable/10400639246336"
 msgid "I'd suggest you read rule eleven again."
-msgstr "규칙 열하나를 다시 읽어 보시게나."
+msgstr "규칙 11을 다시 읽어 봐."
 
 #. nl: Ha ha!
 #, fuzzy
@@ -1442,32 +1442,32 @@ msgstr "하하!"
 #, fuzzy
 msgctxt "TrollDialogTable/10434315313152"
 msgid "Please do not perform your turn while im looking away..."
-msgstr "내가 딴 데 보는 동안 수를 두지 마시게..."
+msgstr "내가 딴 데 보는 동안에는 수를 두지 마..."
 
 #. nl: Straks mis ik je blunders!
 #, fuzzy
 msgctxt "TrollDialogTable/10460856868864"
 msgid "I might not catch your stupidity!"
-msgstr "그러다 니 멍청한 수작을 놓치면 어쩌나!"
+msgstr "그러다 너의 멍청한 수작을 못 보면 어쩌려고!"
 
 #. nl: Ik zou alleen iemand beschuldigen als ik zeker wist dat ze
 #. valsspeelde...
 #, fuzzy
 msgctxt "TrollDialogTable/10482482700288"
 msgid "I would only accuse someone of cheating if i were absolutely sure..."
-msgstr "확실할 때만 속임수를 의심하는 편이라네..."
+msgstr "나는 확실할 때만 속임수라고 고발하는 편이거든..."
 
 #. nl: Niet dat ik ooit zo'n stunt bij jou zou uithalen...
 #, fuzzy
 msgctxt "TrollDialogTable/10507807907840"
 msgid "Not that I would ever cheat against you..."
-msgstr "나라면 네게 속임수를 쓰진 않겠지..."
+msgstr "물론 내가 너에게 속임수를 쓸 리는 없겠지만..."
 
 #. nl: Ze zeggen dat alleen de paardenjongen kan springen...
 #, fuzzy
 msgctxt "TrollDialogTable/10532155842560"
 msgid "They say only the horseguy can jump..."
-msgstr "말 타는 녀석만 뛸 수 있다더군..."
+msgstr "말 녀석만 뛸 수 있다더군..."
 
 #. nl: Maar ik doe een aardige salto als het er op aan komt!
 #, fuzzy
@@ -1479,7 +1479,7 @@ msgstr "하지만 필요하다면 나도 제법 재주넘기를 하지!"
 #, fuzzy
 msgctxt "TrollDialogTable/10918379937792"
 msgid "Just under your nose,"
-msgstr "바로 네 코앞에,"
+msgstr "바로 너의 코앞에,"
 
 #. nl: Het puntje van je tong...
 #, fuzzy
@@ -1503,7 +1503,7 @@ msgstr "그러면 재미없을 테니..."
 #, fuzzy
 msgctxt "TrollDialogTable/11020158918656"
 msgid "Many an answer,"
-msgstr "답은 많아도,"
+msgstr "답은 여럿이어도,"
 
 #. nl: Maar een vraag ik om...
 #, fuzzy
@@ -1557,7 +1557,7 @@ msgstr "내 게임을!"
 #, fuzzy
 msgctxt "TrollDialogTable/11699027992576"
 msgid "You almost tricked me into believing you were a juggler."
-msgstr "넌 날 거의 속여서 곡예사인 줄 믿게 했어."
+msgstr "하마터면 네가 곡예사인 줄 속을 뻔했군."
 
 #. nl: Ik had het mis.
 #, fuzzy
@@ -1599,7 +1599,7 @@ msgstr "내가 게임에서 이기진 못했지만..."
 #, fuzzy
 msgctxt "TrollDialogTable/13083559354368"
 msgid "But at least i'll leave a worthy successor..."
-msgstr "그래도 걸맞은 후계자는 남겨두지..."
+msgstr "그래도 걸맞은 후계자는 남겨 두겠어..."
 
 #. nl: Jij...
 #, fuzzy
@@ -1611,7 +1611,7 @@ msgstr "너..."
 #, fuzzy
 msgctxt "TrollDialogTable/13109253660672"
 msgid "Cheater."
-msgstr "사기꾼."
+msgstr "속임수꾼."
 
 #. nl: . . .
 #, fuzzy
@@ -1725,13 +1725,13 @@ msgstr "또다시."
 #, fuzzy
 msgctxt "TrollDialogTable/14867606560768"
 msgid "Keep trying, adventurer."
-msgstr "계속 해봐라, 모험가여."
+msgstr "계속 해 봐라, 모험가."
 
 #. nl: Ik versla je.
 #, fuzzy
 msgctxt "TrollDialogTable/14895087640576"
 msgid "I'll kick you down."
-msgstr "널 쫓아내줄게."
+msgstr "널 다리 밑으로 걷어차 주지."
 
 #. nl: Elke.
 #, fuzzy
@@ -1743,7 +1743,7 @@ msgstr "매번."
 #, fuzzy
 msgctxt "TrollDialogTable/14928793067520"
 msgid "Time."
-msgstr "번마다."
+msgstr "예외 없이."
 
 #. nl: Ik ben verbaasd dat je jezelf nog niet van de brug hebt gekiepert.
 #, fuzzy
@@ -1775,7 +1775,7 @@ msgstr "이번엔 비밀 하나를 알려주지."
 msgctxt "TrollDialogTable/15077288206336"
 msgid ""
 "I did a lot of soul searching to get inspiration for rule twenty-three."
-msgstr "규칙 스물셋의 영감을 얻으려고 꽤 깊이 고민했지."
+msgstr "규칙 23에 영감을 얻으려고 한참 자기 성찰을 했지."
 
 #. nl: Best een gaaf geheimpje toch?
 #, fuzzy
@@ -1787,7 +1787,7 @@ msgstr "꽤 멋진 비밀 아니냐?"
 #, fuzzy
 msgctxt "TrollDialogTable/15521909596160"
 msgid "Well that was bad."
-msgstr "저번엔 정말 형편없었어."
+msgstr "방금 판은 정말 형편없었어."
 
 #. nl: Laat maar weten als je nog een keer wilt!
 #, fuzzy
@@ -1817,7 +1817,7 @@ msgstr "내 필살기도 안 쓸 거야!"
 #, fuzzy
 msgctxt "TrollDialogTable/15704626061312"
 msgid "And we hadn't even gotten to the advanced part yet!"
-msgstr "그리고 우리 고급 단계에도 아직 못 갔잖아!"
+msgstr "고급 단계에는 아직 들어가지도 않았다고!"
 
 #. nl: Ik wacht hier op je terugkomst!
 #, fuzzy
@@ -1829,7 +1829,7 @@ msgstr "여기서 네가 돌아오길 기다리고 있겠다."
 #, fuzzy
 msgctxt "TrollDialogTable/15747064029184"
 msgid "Don't be gone too long now."
-msgstr "너무 오래 비우지 마라."
+msgstr "너무 오래 자리를 비우지는 마라."
 
 #. nl: Rust uit avonturier.
 #, fuzzy
@@ -1872,7 +1872,7 @@ msgstr "난 싫어."
 #, fuzzy
 msgctxt "TrollDialogTable/16248778285056"
 msgid "Your time is up."
-msgstr "네 시간은 끝났다."
+msgstr "너의 시간은 끝났다."
 
 #. nl: En niet alleen figuratief gezien...
 #, fuzzy
@@ -1980,7 +1980,7 @@ msgstr "그 수는 진짜 형편없었어!"
 #, fuzzy
 msgctxt "TrollDialogTable/17070329192448"
 msgid "I'll show you how this game was meant to be played… "
-msgstr "이 게임이 어떻게 두는 건지 내가 보여 주지… "
+msgstr "이 게임을 어떻게 두는 건지 내가 보여 주지… "
 
 #. nl: Wat je nu ruikt?
 #, fuzzy
@@ -2010,7 +2010,7 @@ msgstr "그리고 만드는 중인 대박작도 잔뜩 있지!"
 #, fuzzy
 msgctxt "TrollDialogTable/17210817404928"
 msgid "I'll be recognized by everyone after I release \"Rock, Paper, Dragons\"!"
-msgstr "\"바위, 보, 드래곤\"만 내 놓으면 모두가 날 알아볼 거야!"
+msgstr "\"바위, 보, 드래곤\"을 출시하면 모두가 날 알아볼 거야!"
 
 #. nl: Hoe ik dit hele ding geregeld heb?
 #, fuzzy
@@ -2034,13 +2034,13 @@ msgstr "당연하잖아."
 #, fuzzy
 msgctxt "TrollDialogTable/17346159206400"
 msgid "Your \"naive\" shtick won't work on me!"
-msgstr "네 \"순진한\" 연기 같은 건 안 통한다구!"
+msgstr "너의 \"순진한\" 연기 같은 건 안 통한다고!"
 
 #. nl: Winnen uit medelijden zul je nooit!
 #, fuzzy
 msgctxt "TrollDialogTable/17370452615168"
 msgid "I'll never let you win out of pity! "
-msgstr "동정으로 이기게 해 줄 순 없어! "
+msgstr "동정해서 이기게 해 주진 않을 거야! "
 
 #. nl: Wat? Je zag dat?
 #, fuzzy
