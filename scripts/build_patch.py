@@ -13,7 +13,7 @@ Outputs go to out/ at game-relative paths, pristine originals to backup/ (instal
 optional install into the game (originals kept as *.orig).
 usage: python3 scripts/build_patch.py [--game DIR] [--no-install]
 """
-import argparse, base64, json, os, re, shutil
+import argparse, base64, json, os, re, shutil, sys
 import polib, UnityPy
 from UnityPy.helpers.TypeTreeGenerator import TypeTreeGenerator
 from UnityPy.files.SerializedFile import FileIdentifier
@@ -26,11 +26,13 @@ TABLES = f"{BUN}/localization-string-tables-dutch(nl)_assets_all.bundle"
 PAGES = f"{BUN}/localization-assets-dutch(nl)_assets_all.bundle"
 EN_TABLES = f"{BUN}/localization-string-tables-english(en)_assets_all.bundle"
 CATALOG = f"{AA}/catalog.json"
-RES, SHARED0 = f"{D}/resources.assets", f"{D}/sharedassets0.assets"
-TARGETS = (TABLES, PAGES, CATALOG, RES, SHARED0)
+RES, SHARED0, SHARED2 = f"{D}/resources.assets", f"{D}/sharedassets0.assets", f"{D}/sharedassets2.assets"
+DLL = f"{D}/Managed/Assembly-CSharp.dll"
+TARGETS = (TABLES, PAGES, CATALOG, RES, SHARED0, SHARED2, DLL)
 FONT = os.path.join(ROOT, "assets", "fonts", "Galmuri11-Bold.ttf")
 PO = os.path.join(ROOT, "locales", "game_ko_approved.po")
 PAGE_DIR = os.path.join(ROOT, "assets", "pages")
+LINK_DIR = os.path.join(ROOT, "assets", "links")  # table-of-contents entry textures (link_<id>_<l|r>)
 ALAGARD_PATH_ID = 155   # "alagard SDF" in sharedassets0.assets
 ATLAS, POINT, PAD = 2048, 33, 5  # blank dynamic atlas size, sample size (3x Galmuri 11px), SDF padding
 FONT_PATH_ID = 23       # Font "LiberationSans" in resources.assets
@@ -96,6 +98,32 @@ def patch_pages(game, out):
                 hit += 1
     print("pages replaced:", hit)
     write(out, PAGES, env.file.save(packer="lz4"))
+
+
+def patch_links(game, out):
+    """Rulebook table-of-contents entries: textures link_* in sharedassets2.assets."""
+    from PIL import Image
+    env = UnityPy.load(src(game, SHARED2))
+    hit = 0
+    for o in env.objects:
+        if o.type.name == "Texture2D":
+            d = o.read()
+            f = os.path.join(LINK_DIR, d.m_Name + ".png")
+            if d.m_Name.startswith("link_") and os.path.exists(f):
+                im = Image.open(f).convert("RGBA")
+                assert im.size == (d.m_Width, d.m_Height), (d.m_Name, im.size)
+                d.image = im
+                d.save()
+                hit += 1
+    print("link textures replaced:", hit)
+    write(out, SHARED2, env.file.save())
+
+
+def patch_dll(game, out):
+    """Steam achievement names/descriptions -> Korean (IL patch of Assembly-CSharp.dll, see scripts/patch_dll.py)."""
+    import subprocess
+    subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "patch_dll.py"), "--src", src(game, DLL),
+                    "--dst", os.path.join(out, DLL)], check=True)
 
 
 def patch_resources(game, out):
@@ -194,6 +222,8 @@ if __name__ == "__main__":
     a = ap.parse_args()
     patch_tables(a.game, a.out)
     patch_pages(a.game, a.out)
+    patch_links(a.game, a.out)
+    patch_dll(a.game, a.out)
     patch_resources(a.game, a.out)
     patch_shared0(a.game, a.out)
     patch_catalog(a.game, a.out)

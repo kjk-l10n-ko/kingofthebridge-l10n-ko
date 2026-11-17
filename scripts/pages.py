@@ -10,16 +10,20 @@ spec json: {"erase": [[x,y,w,h] | <patch>, ...],
   xy = top-left of the text block before rotation; rot in degrees, counter-clockwise positive.
   boxes: text laid out (scripts/pagetools/textbox.py) into a w x h flat render, then warped
   through the Coons patch (rect_patch(x,y,w,h,rot) when "patch" is null).
-  env: PAGES_SPEC_DIR / PAGES_OUT_DIR override the spec/output dirs (tests, previews).
+  env: PAGES_SRC_DIR / PAGES_SPEC_DIR / PAGES_OUT_DIR / PAGES_PREV_DIR override the dirs (tests, previews, TOC link textures).
+  texts: "bold" (default 1) thickens the strokes by 1px; the game shows the page at a non-integer
+  scale and 1px Gaegu strokes break up (missing pixels) without it.
 """
 import json, os, re, sys
 import UnityPy
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GAME = "/mnt/s/Installation/Steam/steamapps/common/King of the Bridge"
 BUN = f"{GAME}/King of the Bridge_Data/StreamingAssets/aa/StandaloneWindows64/"
 SRC, SPEC, OUT, PREV = (os.path.join(ROOT, p) for p in ("assets/pages_src", "assets/pages_spec", "assets/pages", "out/preview"))
+SRC = os.environ.get("PAGES_SRC_DIR", SRC)
+PREV = os.environ.get("PAGES_PREV_DIR", PREV)
 SPEC = os.environ.get("PAGES_SPEC_DIR", SPEC)
 OUT = os.environ.get("PAGES_OUT_DIR", OUT)
 FONT = os.path.join(ROOT, "assets/fonts/Gaegu-Bold.ttf")
@@ -96,11 +100,14 @@ def render(name):
         for i, l in enumerate(lines):
             dr.text((4, 4 + i * step), l, font=font, fill=(255, 255, 255, 255))
         layer = layer.rotate(t.get("rot", 0), expand=True, resample=Image.BICUBIC)
+        if t.get("bold", 1):
+            layer.putalpha(layer.getchannel("A").filter(ImageFilter.MaxFilter(3)))
         im.alpha_composite(layer, (max(0, t["xy"][0]), max(0, t["xy"][1])))
     if spec.get("boxes"):
         patch, textbox, warp = _pagetools()
         for b in spec["boxes"]:
             _render_box(im, b, patch, textbox, warp)
+    im = Image.merge("RGBA", (Image.new("L", im.size, 255),) * 3 + (im.getchannel("A"),))  # ink is white; drop black RGB under dilated/antialiased alpha (dark fringes)
     os.makedirs(OUT, exist_ok=True); os.makedirs(PREV, exist_ok=True)
     im.save(f"{OUT}/{name}.png")
     bg = Image.new("RGBA", im.size, (34, 40, 40, 255)); bg.alpha_composite(im)

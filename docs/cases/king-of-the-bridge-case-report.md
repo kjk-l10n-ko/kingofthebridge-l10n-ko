@@ -15,6 +15,12 @@
 - Windows installer (`tools/build/installer/installer.py` `delta`): mmapping the backup while opening `dst` for write failed with `Errno 22` on this ReFS-like drive. Small originals (<256 MB) are now read as bytes; mmap only for big ones. Do not test write access by opening a game file with `open(p,"wb")` (truncates it).
 - Steam must be logged in or a login dialog covers the game; screenshots via `PrintWindow`; clicks need the window in foreground (SendInput after `Alt` keypress).
 
+## Table-of-contents entries and achievements (found after first review)
+- TOC entries are not in the page textures: 68 textures `link_<id>_<l|r>` (160x51, e1/e2/r0..r29/t1/t2) in `sharedassets2.assets`, English bracket + number + summary. `scripts/links.py export`, specs in `assets/links_spec`, render with `pages.py` env dirs, applied by `build_patch.patch_links`. Tilted 12-13px text: `Image.rotate` makes 1px white strokes dark (un-premultiplied RGBA); render 4x-supersampled flat text and warp via `rect_patch` instead.
+- Output page/link PNGs must keep RGB=255 under the alpha (dilation/antialias leave black RGB -> dark fringes); `pages.py` forces it.
+- Achievement names/descriptions come from Steam's schema at runtime (`Achievement.Name/Description` via Facepunch; the local `appcache/stats/UserGameStatsSchema_<appid>.bin` has only `english`). Patched by IL edit of `SteamAchievements.TryGetNameOfAchievement/TryGetDescriptionOfAchievement` (id -> Korean `switch` prepended, falls through to Steam): `scripts/patch_dll.py` (docker dotnet sdk + Cecil, `scripts/dll/`), table `locales/achievements.json`. The Steam overlay unlock toast stays English.
+- Page text: game shows page sprites with Point filter; 1px antialiased strokes break up. Text is 1px dilated by default (`texts[].bold`), titles 26px, body <=16px (`scripts/normalize_pages.py`). `scripts/preview_pages.py` makes game-like contact sheets without launching the game.
+
 ## Rulebook page tools (`scripts/pagetools/`)
 `shapes.py` (ink -> Coons patch with cubic Bezier edges / outline), `textbox.py` + `editor.html` (fit + wrap Korean into a box, WYSIWYG), `warp.py` (flat text -> patch), `pages.py` `boxes`/patch `erase`. Page specs: `assets/pages_spec/*.json` (+ `.txt` EN/KO). Body size is 15-18 px (Gaegu Bold); Korean is wider than English caps.
 
