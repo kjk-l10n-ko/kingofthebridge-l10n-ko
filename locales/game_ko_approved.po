@@ -38,7 +38,7 @@ msgstr "[ SPACE ] 고발"
 #, fuzzy
 msgctxt "ChessTable/2962956849152"
 msgid "YOU MAY CHEAT THIS TURN"
-msgstr "이번 차례에는 속임수를 써도 된다"
+msgstr "이번 차례에는 반칙을 해도 된다"
 
 #. nl: VERKEERD BESCHULDIGD
 #, fuzzy
@@ -98,7 +98,7 @@ msgstr "[ N ] 탈출"
 #, fuzzy
 msgctxt "ChessTable/16968421576704"
 msgid "YOU CHEATED"
-msgstr "당신은 속임수를 썼다"
+msgstr "당신은 반칙을 했다"
 
 #. nl: [ Y ] BEVESTIG
 #, fuzzy
@@ -134,13 +134,13 @@ msgstr "+1 고철!"
 #, fuzzy
 msgctxt "RuleBreakTable/15907446784"
 msgid "did not catch the other cheating?"
-msgstr "상대의 속임수를 잡아내지 못했나?"
+msgstr "상대의 반칙을 잡아내지 못했나?"
 
 #. nl: heeft de ander verkeerd beschuldigd?
 #, fuzzy
 msgctxt "RuleBreakTable/134396534784"
 msgid "falsely accused the other of cheating?"
-msgstr "상대를 속임수로 잘못 고발했나?"
+msgstr "상대를 반칙으로 잘못 고발했나?"
 
 #. nl: was bewogen door de verkeerde kleur.
 #, fuzzy
@@ -440,19 +440,19 @@ msgstr "발로라이트 파편 {scrapCount}개를 모았습니다."
 #, fuzzy
 msgctxt "CreditsTable/4750804094976"
 msgid "And you did not cheat a single time."
-msgstr "그리고 속임수를 한 번도 쓰지 않았습니다."
+msgstr "그리고 반칙을 한 번도 하지 않았습니다."
 
 #. nl: En je speelde een keer vals.
 #, fuzzy
 msgctxt "CreditsTable/4824661594112"
 msgid "And you cheated one single time."
-msgstr "그리고 속임수를 딱 한 번 썼습니다."
+msgstr "그리고 반칙을 딱 한 번 했습니다."
 
 #. nl: En je speelde {cheatCount} keer vals.
 #, fuzzy
 msgctxt "CreditsTable/4879871217664"
 msgid "And you cheated a total of {cheatCount} times."
-msgstr "그리고 속임수를 총 {cheatCount}번 썼습니다."
+msgstr "그리고 반칙을 총 {cheatCount}번 했습니다."
 
 #. nl: EEN SPEL DOOR FINN SCHUURING
 #, fuzzy
@@ -897,7 +897,7 @@ msgstr "끝없이."
 #, fuzzy
 msgctxt "TrollDialogTable/1582769397760"
 msgid "Go on then, cheat."
-msgstr "그럼 어디 속임수 써 봐."
+msgstr "그럼 어디 반칙해 봐."
 
 #. nl: Al deze beschuldigingen... Wat een verspilling van mijn tijd.
 #, fuzzy
@@ -957,7 +957,7 @@ msgstr "자, 그럼 이제 너의 \"보복\"을 해 봐."
 #, fuzzy
 msgctxt "TrollDialogTable/2615646117888"
 msgid "Cheater cheater!"
-msgstr "속임수꾼! 속임수꾼!"
+msgstr "반칙꾼! 반칙꾼!"
 
 #. nl: Dacht je nou echt dat ik kleurenblind was?
 #, fuzzy
@@ -1000,7 +1000,7 @@ msgstr "있잖아,"
 #, fuzzy
 msgctxt "TrollDialogTable/3854798708736"
 msgid "Cheater!"
-msgstr "속임수꾼!"
+msgstr "반칙꾼!"
 
 #. nl: En dit was te elegant!
 #, fuzzy
@@ -1032,7 +1032,7 @@ msgstr "그림에서 그걸 아주 분명히 보여 준다고 생각했는데."
 #, fuzzy
 msgctxt "TrollDialogTable/3961208201216"
 msgid "Cheating right before my very eyes..."
-msgstr "내 눈앞에서 대놓고 속임수를 쓰다니..."
+msgstr "내 눈앞에서 대놓고 반칙을 하다니..."
 
 #. nl: "Door de kroon zijn ze loom."
 #, fuzzy
@@ -1250,7 +1250,7 @@ msgstr "당장 날 돌려놔!"
 #, fuzzy
 msgctxt "TrollDialogTable/8493262725120"
 msgid "Get me off this chicken you cheater!"
-msgstr "이 닭에서 날 내려놔, 이 속임수꾼아!"
+msgstr "이 닭에서 날 내려놔, 이 반칙꾼아!"
 
 #. nl: Waag het niet om me dit aan te doen!
 #, fuzzy
@@ -1328,7 +1328,7 @@ msgstr "괜한 짓 하지 마라!"
 #, fuzzy
 msgctxt "TrollDialogTable/9399815397376"
 msgid "You would accuse me of cheating?"
-msgstr "나를 속임수로 고발하겠다고?"
+msgstr "나를 반칙으로 고발하겠다고?"
 
 #. nl: Dan neem ik mijn wraak!
 #, fuzzy
@@ -1370,7 +1370,7 @@ msgstr "내 실력이 부러운 거겠지..."
 #, fuzzy
 msgctxt "TrollDialogTable/9635128434688"
 msgid "Sorry, I left my cheating pants under the bridge!"
-msgstr "미안, 속임수 바지는 다리 밑에 두고 왔어!"
+msgstr "미안, 반칙 바지는 다리 밑에 두고 왔어!"
 
 #. nl: In plaats daarvan draag ik mijn winnaars broek!
 #, fuzzy
@@ -1400,7 +1400,7 @@ msgstr "틀렸어."
 #, fuzzy
 msgctxt "TrollDialogTable/9783988477952"
 msgid "And you accuse me of cheating?"
-msgstr "그런데 나를 속임수꾼이라고 고발해?"
+msgstr "그런데 나를 반칙꾼이라고 고발해?"
 
 #. nl: Hypocriet.
 #, fuzzy
@@ -1455,13 +1455,13 @@ msgstr "그러다 너의 멍청한 수작을 못 보면 어쩌려고!"
 #, fuzzy
 msgctxt "TrollDialogTable/10482482700288"
 msgid "I would only accuse someone of cheating if i were absolutely sure..."
-msgstr "나는 확실할 때만 속임수라고 고발하는 편이거든..."
+msgstr "나는 확실할 때만 반칙이라고 고발하는 편이거든..."
 
 #. nl: Niet dat ik ooit zo'n stunt bij jou zou uithalen...
 #, fuzzy
 msgctxt "TrollDialogTable/10507807907840"
 msgid "Not that I would ever cheat against you..."
-msgstr "물론 내가 너에게 속임수를 쓸 리는 없겠지만..."
+msgstr "물론 내가 너에게 반칙을 할 리는 없겠지만..."
 
 #. nl: Ze zeggen dat alleen de paardenjongen kan springen...
 #, fuzzy
@@ -1611,7 +1611,7 @@ msgstr "너..."
 #, fuzzy
 msgctxt "TrollDialogTable/13109253660672"
 msgid "Cheater."
-msgstr "속임수꾼."
+msgstr "반칙꾼."
 
 #. nl: . . .
 #, fuzzy
@@ -1623,13 +1623,13 @@ msgstr ". . ."
 #, fuzzy
 msgctxt "TrollDialogTable/14076250447872"
 msgid "Even after all my tricks..."
-msgstr "내 온갖 속임수에도..."
+msgstr "내 온갖 반칙에도..."
 
 #. nl: Speel je nogsteeds niet vals?
 #, fuzzy
 msgctxt "TrollDialogTable/14082629984256"
 msgid "You still refused to cheat?"
-msgstr "너는 끝까지 속임수를 안 쓰는 거냐?"
+msgstr "너는 끝까지 반칙을 안 하는 거냐?"
 
 #. nl: Ben je een sukkel?
 #, fuzzy
