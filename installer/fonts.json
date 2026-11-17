@@ -1,0 +1,16 @@
+[
+ {
+  "name": "Galmuri11 Bold",
+  "author": "이민서 (Lee Minseo)",
+  "url": "https://github.com/quiple/galmuri",
+  "license_file": "assets/fonts/LICENSE.txt",
+  "family": "Galmuri"
+ },
+ {
+  "name": "Gaegu Bold",
+  "author": "Jikji Soft (직지소프트)",
+  "url": "https://fonts.google.com/specimen/Gaegu",
+  "license_file": "assets/fonts/OFL-Gaegu.txt",
+  "note": "규칙서 그림 속 글자에 사용"
+ }
+]

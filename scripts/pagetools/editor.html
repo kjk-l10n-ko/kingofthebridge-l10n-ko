@@ -1,0 +1,389 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>pages / text box editor</title>
+<style>
+  html,body{margin:0;background:#222;color:#ddd;font:13px/1.4 system-ui,sans-serif}
+  #app{display:flex;gap:10px;padding:8px;align-items:flex-start}
+  #cv{background:#111;image-rendering:pixelated;cursor:crosshair;touch-action:none}
+  #side{width:330px;display:flex;flex-direction:column;gap:6px}
+  fieldset{border:1px solid #444;margin:0;padding:6px}
+  label{display:flex;gap:6px;align-items:center;justify-content:space-between;margin:2px 0}
+  label span{flex:0 0 76px;color:#9aa}
+  input,select,textarea,button{background:#2c2c2c;color:#ddd;border:1px solid #555;font:inherit;padding:2px 4px}
+  input[type=range]{padding:0}
+  textarea{width:100%;height:80px;box-sizing:border-box}
+  button{cursor:pointer}
+  #banner{display:none;background:#a11;color:#fff;padding:6px 10px}
+  #status{color:#8b8;min-height:1.4em}
+  select{max-width:210px}
+</style>
+<div id="banner"></div>
+<div id="app">
+  <canvas id="cv" width="640" height="640"></canvas>
+  <div id="side">
+    <div id="status">loading…</div>
+    <fieldset><legend>page</legend>
+      <label><span>source</span><select id="page"></select></label>
+      <label><span>load boxes</span><select id="boxesel"></select></label>
+      <label><span>patch file</span><select id="filesel"></select></label>
+      <button id="addpatch">Add box from patch file</button>
+    </fieldset>
+    <fieldset><legend>box</legend>
+      <label><span>select</span><select id="boxsel"></select></label>
+      <label><span>size (auto)</span><input id="size" type="number" step="0.5" min="4" placeholder="auto" style="width:110px"></label>
+      <label><span>align</span><select id="align"><option>center</option><option>left</option><option>right</option></select></label>
+      <label><span>valign</span><select id="valign"><option>center</option><option>top</option></select></label>
+      <label><span>line</span><input id="line" type="number" step="0.05" value="1.15" style="width:110px"></label>
+      <label><span>padding</span><input id="padding" type="number" step="1" value="0" style="width:110px"></label>
+      <label><span>rot°</span><input id="rot" type="number" step="1" value="0" style="width:110px"></label>
+      <label><span>bold</span><input id="bold" type="range" min="0" max="4" value="0" style="flex:1"><b id="boldv">0</b></label>
+      <button id="del">Delete box</button>
+    </fieldset>
+    <fieldset><legend>text</legend>
+      <textarea id="text" placeholder="한국어 텍스트, &#10; 줄바꿈도 됩니다"></textarea>
+    </fieldset>
+    <fieldset><legend>save</legend>
+      <label><span>name</span><input id="name" style="flex:1"></label>
+      <button id="save">Save to assets/pages_box</button>
+    </fieldset>
+  </div>
+</div>
+<script>
+const cv = document.getElementById("cv"), ctx = cv.getContext("2d");
+const mcv = document.createElement("canvas"), mctx = mcv.getContext("2d");
+const $ = id => document.getElementById(id);
+const S = {scale: 2, page: null, img: null, boxes: [], sel: -1, font: "Gaegu-Bold.ttf", fontok: false};
+
+// ---------- wrap: faithful port of textbox.py wrap() ----------
+const PUNCT = ".,!?:;)]}、。…·%", WORDISH = /[A-Za-z0-9'’-]/;
+const wcache = new Map();
+function setfont(size) { mctx.font = size + "px pagefont"; }
+function mw(s, size, spacing) {
+  if (!s.length) return 0;
+  const k = size + "|" + s, v = wcache.get(k);
+  if (v !== undefined) return v + spacing * (s.length - 1);
+  setfont(size);
+  const w = mctx.measureText(s).width;
+  wcache.set(k, w);
+  return w + spacing * (s.length - 1);
+}
+function trimc(a) { let i = 0, j = a.length; while (i < j && /\s/.test(a[i])) i++; while (j > i && /\s/.test(a[j - 1])) j--; return a.slice(i, j); }
+function wrap(cs, maxw, size, spacing) {
+  const lines = [];
+  for (const para of paras(cs)) {
+    let s = trimc(para);
+    if (!s.length) { lines.push(""); continue; }
+    while (s.length) {
+      if (mw(s.join(""), size, spacing) <= maxw) { lines.push(s.join("")); break; }
+      let k = 0;
+      while (k < s.length && mw(s.slice(0, k + 1).join(""), size, spacing) <= maxw) k++;
+      let cut = k || 1;
+      if (cut < s.length) {
+        let j = -1;
+        for (let i = cut; i >= Math.floor(cut / 2); i--) if (s[i] === " ") { j = i; break; }
+        if (j > 0) cut = j;
+        else if (WORDISH.test(s[cut - 1]) && WORDISH.test(s[cut])) {
+          let b = cut; while (b > 0 && WORDISH.test(s[b - 1])) b--;
+          let e = cut; while (e < s.length && WORDISH.test(s[e])) e++;
+          cut = b > 0 ? b : e;
+        }
+        while (cut > 1 && cut < s.length && PUNCT.includes(s[cut])) cut--;
+      }
+      lines.push(trimc(s.slice(0, cut)).join(""));
+      s = trimc(s.slice(cut));
+    }
+  }
+  return lines;
+}
+function paras(cs) {
+  const out = [[]];
+  for (const c of cs) c === "\n" ? out.push([]) : out[out.length - 1].push(c);
+  return out;
+}
+function metrics(size, line, n) {
+  setfont(size);
+  const t = mctx.measureText("한Ay");
+  const asc = t.fontBoundingBoxAscent || size * 0.82, desc = t.fontBoundingBoxDescent || size * 0.24;
+  const lh = size * line;
+  return {lh, bh: (n ? lh * (n - 1) : 0) + asc + desc, asc};
+}
+function fitbox(b) {
+  const pad = b.padding || 0, iw = b.w - 2 * pad, ih = b.h - 2 * pad, cs = [...b.text];
+  const spacing = b.spacing || 0, line = b.line || 1.15;
+  if (b.size) return {size: b.size, auto: false, lines: wrap(cs, iw, b.size, spacing)};
+  const trysize = s => {
+    const lines = wrap(cs, iw, s, spacing);
+    return {lines, ok: metrics(s, line, lines.length).bh <= ih && lines.every(l => mw(l, s, spacing) <= iw)};
+  };
+  let size = 4, lo = 4, hi = 200;
+  while (lo <= hi) {                         // same 0.5pt binary search as textbox.py
+    const mid = Math.round((lo + hi) / 2 * 2) / 2;
+    if (trysize(mid).ok) { size = mid; lo = mid + 0.5; } else hi = mid - 0.5;
+  }
+  return {size, auto: true, lines: wrap(cs, iw, size, spacing)};
+}
+
+// ---------- bezier patch outline ----------
+function bez(p, t) {
+  const u = 1 - t, a = u * u * u, b = 3 * u * u * t, c = 3 * u * t * t, d = t * t * t;
+  return [a * p[0][0] + b * p[1][0] + c * p[2][0] + d * p[3][0],
+          a * p[0][1] + b * p[1][1] + c * p[2][1] + d * p[3][1]];
+}
+function patchpath(p) {
+  const e = p.top.map((q, i) => i === 0 ? "M" + q[0] + " " + q[1] : "L" + q[0] + " " + q[1]).join(" ");
+  return [[e, p.top], ["", p.bottom], ["", p.left], ["", p.right]];
+}
+function patchbbox(p) {
+  const xs = [], ys = [];
+  for (const side of ["top", "bottom", "left", "right"])
+    for (let i = 0; i <= 24; i++) { const q = bez(p[side], i / 24); xs.push(q[0]); ys.push(q[1]); }
+  return {x: Math.min(...xs), y: Math.min(...ys), w: Math.max(...xs) - Math.min(...xs),
+          h: Math.max(...ys) - Math.min(...ys)};
+}
+const ispatch = o => o && ["top", "bottom", "left", "right"].every(k => Array.isArray(o[k]) && o[k].length === 4);
+
+// ---------- drawing ----------
+function draw() {
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.clearRect(0, 0, cv.width, cv.height);
+  ctx.fillStyle = "#1b1f20"; ctx.fillRect(0, 0, cv.width, cv.height);
+  const sc = S.scale;
+  if (S.img) ctx.drawImage(S.img, 0, 0, cv.width, cv.height);
+  else { ctx.strokeStyle = "#333"; ctx.strokeRect(0.5, 0.5, cv.width - 1, cv.height - 1); }
+  S.boxes.forEach((b, i) => {
+    if (b.patch) {
+      ctx.save(); ctx.scale(sc, sc); ctx.strokeStyle = i === S.sel ? "#ffd34d" : "#8a6";
+      ctx.lineWidth = 1 / sc; ctx.beginPath();
+      for (const side of ["top", "bottom", "left", "right"]) {
+        const p = b.patch[side]; ctx.moveTo(p[0][0], p[0][1]);
+        ctx.bezierCurveTo(p[1][0], p[1][1], p[2][0], p[2][1], p[3][0], p[3][1]);
+      }
+      ctx.stroke(); ctx.restore();
+    }
+    const f = fitbox(b);
+    ctx.save();
+    ctx.translate(b.x * sc + b.w * sc / 2, b.y * sc + b.h * sc / 2);
+    ctx.rotate(-(b.rot || 0) * Math.PI / 180);
+    ctx.scale(sc, sc);
+    ctx.globalAlpha = 1;
+    ctx.strokeStyle = i === S.sel ? "#ffd34d" : "#5aa9d6";
+    ctx.lineWidth = 1 / sc;
+    ctx.strokeRect(-b.w / 2, -b.h / 2, b.w, b.h);
+    // text preview
+    const pad = b.padding || 0, line = b.line || 1.15;
+    const m = metrics(f.size, line, f.lines.length);
+    const y0 = b.valign === "top" ? -b.h / 2 + pad : (b.h - 2 * pad - m.bh) / 2 - b.h / 2 + pad;
+    setfont(f.size);
+    ctx.font = f.size + "px pagefont";
+    ctx.fillStyle = "#fff"; ctx.strokeStyle = "#fff"; ctx.textBaseline = "alphabetic";
+    const draw1 = (t, x, y) => {
+      ctx.fillText(t, x, y);
+      if (b.bold) { ctx.lineWidth = b.bold * 0.5; ctx.strokeText(t, x, y); }  // stand-in for Python's alpha dilate
+    };
+    f.lines.forEach((ln, k) => {
+      if (!ln) return;
+      const lw = mw(ln, f.size, b.spacing || 0);
+      const x = b.align === "left" ? -b.w / 2 + pad
+              : b.align === "right" ? b.w / 2 - pad - lw
+              : -lw / 2;
+      const y = y0 + m.asc + k * m.lh;
+      if (b.spacing) {
+        let cx = x;
+        for (const ch of ln) { draw1(ch, cx, y); cx += mw(ch, f.size, 0) + (b.spacing || 0); }
+      } else draw1(ln, x, y);
+    });
+    ctx.restore();
+    if (i === S.sel) {  // corner handles
+      [...[[-1, -1], [1, -1], [1, 1], [-1, 1]]].forEach(([sx, sy]) => {
+        const p = toWorld(b, sx * b.w / 2, sy * b.h / 2);
+        ctx.fillStyle = "#ffd34d";
+        ctx.fillRect(p[0] * sc - 4, p[1] * sc - 4, 8, 8);
+      });
+    }
+    if (!f.lines.length) return;
+  });
+  const b = S.boxes[S.sel];
+  if (b) {
+    const f = fitbox(b);
+    $("status").textContent = `${b.w.toFixed(0)}x${b.h.toFixed(0)} ${f.size}pt ${f.auto ? "(auto)" : "(forced)"} ${f.lines.length} lines`
+      + (f.lines.some(l => mw(l, f.size, b.spacing || 0) > b.w - 2 * (b.padding || 0)) ? "  OVERFLOW" : "");
+  }
+}
+function toWorld(b, lx, ly) {
+  const t = (b.rot || 0) * Math.PI / 180, c = Math.cos(t), s = Math.sin(t);
+  return [b.x + b.w / 2 + lx * c + ly * s, b.y + b.h / 2 - lx * s + ly * c];
+}
+function toLocal(b, x, y) {
+  const t = (b.rot || 0) * Math.PI / 180, c = Math.cos(t), s = Math.sin(t);
+  const dx = x - (b.x + b.w / 2), dy = y - (b.y + b.h / 2);
+  return [dx * c - dy * s, dx * s + dy * c];
+}
+
+// ---------- interaction ----------
+let drag = null;
+function pt(ev) {
+  const r = cv.getBoundingClientRect();
+  return [(ev.clientX - r.left) * cv.width / r.width / S.scale,
+          (ev.clientY - r.top) * cv.height / r.height / S.scale];
+}
+cv.addEventListener("mousedown", ev => {
+  const [mx, my] = pt(ev);
+  let hit = -1, corner = [0, 0], best = 9;
+  for (let i = S.boxes.length - 1; i >= 0; i--) {
+    const b = S.boxes[i], [lx, ly] = toLocal(b, mx, my);
+    if (i === S.sel) for (const [sx, sy] of [[-1, -1], [1, -1], [1, 1], [-1, 1]]) {
+      const d = Math.hypot(lx - sx * b.w / 2, ly - sy * b.h / 2);
+      if (d < 10 && d < best) { hit = i; best = d; corner = [sx, sy]; }
+    }
+    if (hit < 0 && Math.abs(lx) <= b.w / 2 && Math.abs(ly) <= b.h / 2) { hit = i; corner = null; }
+    if (hit >= 0) break;
+  }
+  if (hit < 0) { drag = {new: [mx, my, mx, my]}; syncBar(); return; }
+  S.sel = hit; syncBar();
+  drag = corner ? {i: hit, corner} : {i: hit, off: [mx - S.boxes[hit].x, my - S.boxes[hit].y]};
+  draw();
+});
+window.addEventListener("mousemove", ev => {
+  if (!drag) return;
+  const [mx, my] = pt(ev);
+  if (drag.new) { drag.new[2] = mx; drag.new[3] = my; draw(); return; }
+  const b = S.boxes[drag.i];
+  if (drag.off) {
+    b.x = Math.round(mx - drag.off[0]); b.y = Math.round(my - drag.off[1]);
+  } else {
+    const [sx, sy] = drag.corner;
+    const fixed = toWorld(b, -sx * b.w / 2, -sy * b.h / 2);
+    const [lx, ly] = toLocal(b, mx, my), [fx, fy] = toLocal(b, fixed[0], fixed[1]);
+    b.w = Math.max(6, Math.round(sx * (lx - fx))), b.h = Math.max(6, Math.round(sy * (ly - fy)));
+    const t = (b.rot || 0) * Math.PI / 180, c = Math.cos(t), s = Math.sin(t);
+    const cx = fixed[0] + (sx * b.w / 2) * c + (sy * b.h / 2) * s;
+    const cy = fixed[1] - (sx * b.w / 2) * s + (sy * b.h / 2) * c;
+    b.x = Math.round(cx - b.w / 2); b.y = Math.round(cy - b.h / 2);
+  }
+  syncBar(); draw();
+});
+window.addEventListener("mouseup", () => {
+  if (drag && drag.new) {
+    const [x0, y0, x1, y1] = drag.new;
+    if (Math.abs(x1 - x0) > 5 && Math.abs(y1 - y0) > 5) {
+      S.boxes.push(mkbox(Math.min(x0, x1), Math.min(y0, y1), Math.abs(x1 - x0), Math.abs(y1 - y0)));
+      S.sel = S.boxes.length - 1;
+    }
+  }
+  drag = null; syncBar(); draw();
+});
+
+// ---------- panel <-> state ----------
+function mkbox(x, y, w, h, extra) {
+  return Object.assign({x: Math.round(x), y: Math.round(y), w: Math.round(w), h: Math.round(h),
+    rot: 0, text: "", size: null, align: "center", valign: "center", line: 1.15, padding: 0,
+    bold: 0, spacing: 0}, extra || {});
+}
+function syncBar() {
+  const b = S.boxes[S.sel];
+  $("boxsel").innerHTML = S.boxes.map((_, i) => `<option${i === S.sel ? " selected" : ""}>box ${i}</option>`).join("");
+  $("size").value = b && b.size ? b.size : "";
+  for (const k of ["align", "valign", "line", "padding", "rot"]) if (b) $(k).value = b[k];
+  if (b) { $("bold").value = b.bold; $("boldv").textContent = b.bold; $("text").value = b.text; }
+  draw();
+}
+const bind = (id, key, cast) => $(id).addEventListener("input", () => {
+  const b = S.boxes[S.sel]; if (!b) return;
+  const v = $(id).value;
+  b[key] = key === "size" ? (v === "" ? null : parseFloat(v)) : (cast ? cast(v) : v);
+  if (key === "bold") $("boldv").textContent = b.bold;
+  draw();
+});
+bind("size", "size", Number); bind("align", "align"); bind("valign", "valign");
+["line", "padding", "rot", "bold"].forEach(k => bind(k, k, k === "bold" ? v => +v : k === "line" ? v => parseFloat(v) : v => parseInt(v, 10) || 0));
+$("text").addEventListener("input", () => { const b = S.boxes[S.sel]; if (b) { b.text = $("text").value; draw(); } });
+$("boxsel").addEventListener("change", () => { S.sel = +$("boxsel").value; syncBar(); });
+$("del").addEventListener("click", () => { if (S.sel >= 0) S.boxes.splice(S.sel, 1); S.sel = Math.min(S.sel, S.boxes.length - 1); syncBar(); });
+
+// ---------- page / files / font ----------
+async function loadPage(name) {
+  S.page = name;
+  S.img = await new Promise((res, rej) => {
+    const im = new Image(); im.onload = () => res(im); im.onerror = rej;
+    im.src = "/pages/" + encodeURIComponent(name);
+  });
+  S.scale = Math.max(1, Math.round(600 / S.img.width)) || 2;
+  cv.width = S.img.width * S.scale; cv.height = S.img.height * S.scale;
+  $("name").value = name.replace(/\.png$/, "");
+  draw();
+}
+async function j(url, opt) { const r = await fetch(url, opt); if (!r.ok) throw new Error(url + " " + r.status); return r.json(); }
+
+async function boot() {
+  const [fonts, pages, files, boxes] = await Promise.all(
+    [j("/fonts"), j("/pages"), j("/files").catch(() => []), j("/boxes").catch(() => [])]);
+  if (fonts.length) S.font = fonts.includes("Gaegu-Bold.ttf") ? "Gaegu-Bold.ttf" : fonts[0];
+  const ff = new FontFace("pagefont", `url(/fonts/${encodeURIComponent(S.font)})`);
+  await ff.load(); document.fonts.add(ff); S.fontok = true;
+  wcache.clear();
+  $("page").innerHTML = pages.map(p => `<option>${p}</option>`).join("");
+  $("filesel").innerHTML = files.map(f => `<option>${f}</option>`).join("");
+  $("boxesel").innerHTML = '<option value="">(new)</option>' + boxes.map(b => `<option>${b}</option>`).join("");
+  if (pages.length) await loadPage(pages[0]);
+  $("status").textContent = "ready — drag on empty canvas to add a box";
+  await checkwrap();
+}
+$("page").addEventListener("change", () => loadPage($("page").value).catch(e => $("status").textContent = e.message));
+$("boxesel").addEventListener("change", async () => {
+  const n = $("boxesel").value; if (!n) return;
+  const d = await j("/boxes/" + encodeURIComponent(n));
+  S.boxes = (d.boxes || []).map(b => mkbox(b.x, b.y, b.w, b.h, b));
+  S.sel = S.boxes.length ? 0 : -1; syncBar();
+  $("status").textContent = "loaded " + n;
+});
+$("addpatch").addEventListener("click", async () => {
+  const f = $("filesel").value; if (!f) return;
+  try {
+    const d = await j("/file/" + f.split("/").map(encodeURIComponent).join("/"));
+    let ps = [];
+    if (ispatch(d)) ps = [d];
+    else if (ispatch(d.patch)) ps = [d.patch];
+    else for (const k of ["patches", "regions", "shapes", "boxes", "texts"])
+      if (Array.isArray(d[k])) ps.push(...d[k].map(x => ispatch(x) ? x : ispatch(x.patch) ? x.patch : null).filter(Boolean));
+    if (!ps.length) { $("status").textContent = "no patch in " + f; return; }
+    for (const p of ps) {
+      const bb = patchbbox(p);
+      S.boxes.push(mkbox(bb.x, bb.y, bb.w, bb.h, {patch: p, text: (d.text || p.text || "")}));
+    }
+    S.sel = S.boxes.length - 1; syncBar();
+    $("status").textContent = `added ${ps.length} box(es) from ${f}`;
+  } catch (e) { $("status").textContent = e.message; }
+});
+$("save").addEventListener("click", async () => {
+  const name = $("name").value.trim() || "untitled";
+  const boxes = S.boxes.map(b => {
+    const o = {x: b.x, y: b.y, w: b.w, h: b.h, rot: b.rot || 0, text: b.text,
+               size: b.size, align: b.align, bold: b.bold || 0,
+               line: b.line || 1.15, padding: b.padding || 0, valign: b.valign, spacing: b.spacing || 0};
+    if (b.patch) o.patch = b.patch;
+    return o;
+  });
+  try {
+    const r = await j("/save", {method: "POST", headers: {"Content-Type": "application/json"},
+                               body: JSON.stringify({name, boxes})});
+    $("status").textContent = `saved ${r.saved} (${r.n} boxes)`;
+  } catch (e) { $("status").textContent = "save failed: " + e.message; }
+});
+
+// ---------- python/js wrap agreement ----------
+async function checkwrap() {
+  let fx;
+  try { fx = await j("/wrap_fixtures.json"); } catch (e) { return; }
+  const bad = [];
+  for (const t of fx) {
+    const got = wrap([...t.text], t.maxw, t.size, t.spacing || 0);
+    if (JSON.stringify(got) !== JSON.stringify(t.lines)) bad.push({want: t.lines, got});
+  }
+  const el = $("banner");
+  if (bad.length) {
+    el.style.display = "block";
+    el.textContent = `JS/Python wrap mismatch on ${bad.length}/${fx.length} fixtures — first: want ${JSON.stringify(bad[0].want)} got ${JSON.stringify(bad[0].got)}`;
+  } else { el.style.display = "none"; el.textContent = ""; }
+}
+boot().catch(e => { $("status").textContent = "boot failed: " + e.message; });
+</script>

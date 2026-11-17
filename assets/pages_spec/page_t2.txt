@@ -1,0 +1,2 @@
+THEN, "CLICK" THE CHESS PIECE YOU THINK VIOLATED A RULE. / LASTLY, "CLICK" THE PAGE OF THE RULE YOU THINK WAS VIOLATED.
+그다음, 규칙을 어겼다고 생각하는 체스 기물을 "클릭"한다. / 마지막으로, 어긴 규칙의 페이지를 "클릭"한다.

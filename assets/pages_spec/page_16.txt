@@ -1,0 +1,2 @@
+RULE 16 / IF TWO TOWERS ARENT NOT ADJACENT. THEY FORM A CASTLE
+규칙 16 / 탑 두 개가 인접하지 않으면 성을 이룬다.

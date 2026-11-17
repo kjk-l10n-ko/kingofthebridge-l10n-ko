@@ -1,0 +1,2 @@
+RULE 03 — YOU CAN ALSO MOVE THE QUEENS OF THE OTHER COLOR.
+규칙 03 — 상대 색의 퀸도 움직일 수 있다

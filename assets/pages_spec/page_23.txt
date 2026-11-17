@@ -1,0 +1,2 @@
+RULE 23 / TOWERS CAN EAT FRIENDLY PIECES TO INCREASE THEIR POWER.
+규칙 23 / 룩은 아군 기물을 먹어서 힘을 키울 수 있다.

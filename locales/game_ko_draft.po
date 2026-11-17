@@ -1,0 +1,2065 @@
+#
+msgid ""
+msgstr ""
+"Language: ko\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+#. nl: WITTE
+#, fuzzy
+msgctxt "ChessTable/1799339479040"
+msgid "WHITE"
+msgstr "백"
+
+#. nl: ZWARTE
+#, fuzzy
+msgctxt "ChessTable/2017900466176"
+msgid "BLACK"
+msgstr "흑"
+
+#. nl: [ SCHAAKSTUK ]
+#, fuzzy
+msgctxt "ChessTable/2119402622976"
+msgid "[ CHESS PIECE ]"
+msgstr "[ 체스 기물 ]"
+
+#. nl: [ VERBROKEN REGEL ]
+#, fuzzy
+msgctxt "ChessTable/2294699364352"
+msgid "[ RULE VIOLATED ]"
+msgstr "[ 규칙 위반 ]"
+
+#. nl: [ SPATIE ] BESCHULDIG
+#, fuzzy
+msgctxt "ChessTable/2760694927360"
+msgid "[ SPACE ] ACCUSE"
+msgstr "[ SPACE ] 고발"
+
+#. nl: JE MAG DEZE RONDE VALSSPELEN
+#, fuzzy
+msgctxt "ChessTable/2962956849152"
+msgid "YOU MAY CHEAT THIS TURN"
+msgstr "이번 차례에는 속임수를 써도 된다"
+
+#. nl: VERKEERD BESCHULDIGD
+#, fuzzy
+msgctxt "ChessTable/3160336601088"
+msgid "FALSE ACCUSATION"
+msgstr "거짓 고발"
+
+#. nl: PION
+#, fuzzy
+msgctxt "ChessTable/3868100235264"
+msgid "PAWN"
+msgstr "폰"
+
+#. nl: PAARD
+#, fuzzy
+msgctxt "ChessTable/4025273389056"
+msgid "KNIGHT"
+msgstr "나이트"
+
+#. nl: LOPER
+#, fuzzy
+msgctxt "ChessTable/4146308419584"
+msgid "BISHOP"
+msgstr "비숍"
+
+#. nl: TOREN
+#, fuzzy
+msgctxt "ChessTable/4218442059776"
+msgid "ROOK"
+msgstr "룩"
+
+#. nl: KONINGIN
+#, fuzzy
+msgctxt "ChessTable/4365246894080"
+msgid "QUEEN"
+msgstr "퀸"
+
+#. nl: KONING
+#, fuzzy
+msgctxt "ChessTable/4443307085824"
+msgid "KING"
+msgstr "킹"
+
+#. nl: [ Y ] OPNIEUW
+#, fuzzy
+msgctxt "ChessTable/14083428290560"
+msgid "[ Y ] RETRY"
+msgstr "[ Y ] 재시도"
+
+#. nl: [ N ] ONTSNAP
+#, fuzzy
+msgctxt "ChessTable/14127959216128"
+msgid "[ N ] ESCAPE"
+msgstr "[ N ] 탈출"
+
+#. nl: JE SPEELT VALS
+#, fuzzy
+msgctxt "ChessTable/16968421576704"
+msgid "YOU CHEATED"
+msgstr "당신은 속임수를 썼다"
+
+#. nl: [ Y ] BEVESTIG
+#, fuzzy
+msgctxt "ChessTable/188280442740736"
+msgid "[ Y ] CONFIRM"
+msgstr "[ Y ] 확인"
+
+#. nl: [ N ] ANNULEER
+#, fuzzy
+msgctxt "ChessTable/188410692657152"
+msgid "[ N ] CANCEL"
+msgstr "[ N ] 취소"
+
+#. nl: LANDMIJN
+#, fuzzy
+msgctxt "ChessTable/308737565286400"
+msgid "LANDMINE"
+msgstr "지뢰"
+
+#. nl: KASTEEL
+#, fuzzy
+msgctxt "ChessTable/308851004432384"
+msgid "CASTLE"
+msgstr "성"
+
+#. nl: +1 Brok!
+#, fuzzy
+msgctxt "ChessTable/310346282196992"
+msgid "+1 Scrap!"
+msgstr "+1 고철!"
+
+#. nl: betrapte de ander niet op valsspelen?
+#, fuzzy
+msgctxt "RuleBreakTable/15907446784"
+msgid "did not catch the other cheating?"
+msgstr "상대방의 속임수를 잡아내지 못했습니까?"
+
+#. nl: heeft de ander verkeerd beschuldigd?
+#, fuzzy
+msgctxt "RuleBreakTable/134396534784"
+msgid "falsely accused the other of cheating?"
+msgstr "상대방을 속임수로 잘못 고발했습니까?"
+
+#. nl: was bewogen door de verkeerde kleur.
+#, fuzzy
+msgctxt "RuleBreakTable/174242422784"
+msgid "was moved by the wrong color."
+msgstr "잘못된 진영에 의해 움직였습니다."
+
+#. nl: was ook een koningin?
+#, fuzzy
+msgctxt "RuleBreakTable/286075150336"
+msgid "Was also a queen?"
+msgstr "퀸이기도 했습니까?"
+
+#. nl: bewoog groot denkend.
+#, fuzzy
+msgctxt "RuleBreakTable/329419087872"
+msgid "Moved big minded."
+msgstr "대범하게 움직였습니다."
+
+#. nl: was geen metafoor?
+#, fuzzy
+msgctxt "RuleBreakTable/404241276928"
+msgid "was not a metaphor?"
+msgstr "은유가 아니었습니까?"
+
+#. nl: heeft terug verkeerd begrepen.
+#, fuzzy
+msgctxt "RuleBreakTable/451557220352"
+msgid "has wrongly defined backwards."
+msgstr "뒤를 잘못 정의했습니다."
+
+#. nl: draafde en galoppeerde niet.
+#, fuzzy
+msgctxt "RuleBreakTable/537435594752"
+msgid "Did not trot, canter or gallop."
+msgstr "속보, 구보, 습보를 하지 않았습니다."
+
+#. nl: hinnikt.
+#, fuzzy
+msgctxt "RuleBreakTable/592620052480"
+msgid "neighs."
+msgstr "히힝 울었습니다."
+
+#. nl: sprong waar alleen hij mag springen.
+#, fuzzy
+msgctxt "RuleBreakTable/658911027200"
+msgid "jumped when only he can jump."
+msgstr "그만 뛸 수 있는데 뛰었습니다."
+
+#. nl: stierf en zwart wint het spel?
+#, fuzzy
+msgctxt "RuleBreakTable/704909959168"
+msgid "died and black wins the game?"
+msgstr "죽어서 흑이 승리했습니까?"
+
+#. nl: steunde de monarchie niet?
+#, fuzzy
+msgctxt "RuleBreakTable/787487416320"
+msgid "did not support the monarchy?"
+msgstr "군주제를 지지하지 않았습니까?"
+
+#. nl: leek niet lui.
+#, fuzzy
+msgctxt "RuleBreakTable/871147003904"
+msgid "did not seem lazy."
+msgstr "게으르지 않았던 것 같다."
+
+#. nl: reisde in de richting van + .
+#, fuzzy
+msgctxt "RuleBreakTable/947449782272"
+msgid "traveled in the direction of + ."
+msgstr " + 방향으로 이동했다."
+
+#. nl: reisde in de richting van x .
+#, fuzzy
+msgctxt "RuleBreakTable/1009412235264"
+msgid "traveled in direction of x ."
+msgstr "x 방향으로 이동했다."
+
+#. nl: kreeg geen avondmaal?
+#, fuzzy
+msgctxt "RuleBreakTable/1109832261632"
+msgid "did not get supper?"
+msgstr "저녁을 못 받았나?"
+
+#. nl: smolt niet samen tot kasteel.
+#, fuzzy
+msgctxt "RuleBreakTable/1157223702528"
+msgid "did not merge into a castle."
+msgstr "캐슬링으로 합쳐지지 않았습니다."
+
+#. nl: genereerde geen valorite brokken.
+#, fuzzy
+msgctxt "RuleBreakTable/1220893237248"
+msgid "Did not generate valorite scraps."
+msgstr "발로라이트 조각을 생성하지 않았습니다."
+
+#. nl: heeft dans etiquette gemist?
+#, fuzzy
+msgctxt "RuleBreakTable/1267508731904"
+msgid "does not know move etiquette."
+msgstr "무브 예절을 모릅니다."
+
+#. nl: dateert terug naar de gerimpelde jaren.
+#, fuzzy
+msgctxt "RuleBreakTable/1357317169152"
+msgid "dates back to the wrinkled ages."
+msgstr "주름진 시대까지 거슬러 올라갑니다."
+
+#. nl: is niet opgestegen toen het vereist werd.
+#, fuzzy
+msgctxt "RuleBreakTable/1404586975232"
+msgid "did not ascend when they should have."
+msgstr "승천해야 할 때 승천하지 않았습니다."
+
+#. nl: draaide niet horizontaal om.
+#, fuzzy
+msgctxt "RuleBreakTable/1453907795968"
+msgid "did not flip horizontally."
+msgstr "수평으로 뒤집지 않았습니다."
+
+#. nl: vergat een cadeautje mee te nemen.
+#, fuzzy
+msgctxt "RuleBreakTable/1496203157504"
+msgid "forgot to bring a gift."
+msgstr "선물을 가져오는 걸 잊었습니다."
+
+#. nl: verstelde niet hun aanvalskracht.
+#, fuzzy
+msgctxt "RuleBreakTable/1546438336512"
+msgid "did not adjust their damage power."
+msgstr "공격력을 조정하지 않았습니다."
+
+#. nl: stapte te dicht op een ander.
+#, fuzzy
+msgctxt "RuleBreakTable/1627963023360"
+msgid "stepped too close to one another."
+msgstr "서로 너무 가까이 다가갔습니다."
+
+#. nl: werkt niet buiten het dorp.
+#, fuzzy
+msgctxt "RuleBreakTable/1670069641216"
+msgid "did not work out of town."
+msgstr "마을 밖에서 일하지 않았습니다."
+
+#. nl: was bewogen.
+#, fuzzy
+msgctxt "RuleBreakTable/1701182988288"
+msgid "was moved."
+msgstr "움직였습니다."
+
+#. nl: was niet glibberig.
+#, fuzzy
+msgctxt "RuleBreakTable/1755050434560"
+msgid "was not slippery."
+msgstr "미끄럽지 않았습니다."
+
+#. nl: kan niet tellen.
+#, fuzzy
+msgctxt "RuleBreakTable/1787195580416"
+msgid "is bad at counting."
+msgstr "세는 걸 못합니다."
+
+#. nl: is vreemdgegaan.
+#, fuzzy
+msgctxt "RuleBreakTable/1845626429440"
+msgid "had an affair."
+msgstr "불륜을 저질렀습니다."
+
+#. nl: is niet vernoemd in het nawoord.
+#, fuzzy
+msgctxt "RuleBreakTable/1880854388736"
+msgid "Was not credited in the epilogue?"
+msgstr "에필로그에 언급되지 않았습니까?"
+
+#. nl: doet niet eens hun best?
+#, fuzzy
+msgctxt "RuleBreakTable/2037050269696"
+msgid "Is not even trying?"
+msgstr "노력조차 하지 않습니까?"
+
+#. nl: verdenkt de andere kleur niet?
+#, fuzzy
+msgctxt "RuleBreakTable/2131422109696"
+msgid "Does not suspect the other color?"
+msgstr "다른 진영을 의심하지 않습니까?"
+
+#. nl: begrijpt deze pagina niet?
+#, fuzzy
+msgctxt "RuleBreakTable/2234035757056"
+msgid "Does not understand this page?"
+msgstr "이 페이지를 이해하지 못합니까?"
+
+#. nl: is geen inhoud?
+#, fuzzy
+msgctxt "RuleBreakTable/115224600928256"
+msgid "is not content?"
+msgstr "만족스럽지 않나?"
+
+#. nl: Je blijft op de brug...
+#, fuzzy
+msgctxt "CreditsTable/442863816704"
+msgid "You remain on the bridge..."
+msgstr "당신은 다리에 남아 있습니다..."
+
+#. nl: Je bent de brug overgestoken.
+#, fuzzy
+msgctxt "CreditsTable/497612066816"
+msgid "You crossed the bridge."
+msgstr "당신은 다리를 건넜습니다."
+
+#. nl: Je bent opgestegen...
+#, fuzzy
+msgctxt "CreditsTable/540888895488"
+msgid "You have ascended..."
+msgstr "당신은 승천했습니다..."
+
+#. nl: Je bent van de trol af...
+#, fuzzy
+msgctxt "CreditsTable/583276531712"
+msgid "You got rid of the troll..."
+msgstr "당신은 트롤을 없앴습니다..."
+
+#. nl: Maar je blijft op de brug...
+#, fuzzy
+msgctxt "CreditsTable/748041375744"
+msgid "But you remain on the bridge..."
+msgstr "하지만 당신은 다리에 남아 있습니다..."
+
+#. nl: Na 1 poging.
+#, fuzzy
+msgctxt "CreditsTable/797987147776"
+msgid "After 1 attempt."
+msgstr "1회 시도 후."
+
+#. nl: Na {attemptCount} pogingen.
+#, fuzzy
+msgctxt "CreditsTable/1727235198976"
+msgid "After {attemptCount} attempts."
+msgstr "{attemptCount}회 시도 후."
+
+#. nl: uur,
+#, fuzzy
+msgctxt "CreditsTable/2338135576576"
+msgid "hour,"
+msgstr "시간,"
+
+#. nl: uren,
+#, fuzzy
+msgctxt "CreditsTable/3103172431872"
+msgid "hours,"
+msgstr "시간,"
+
+#. nl: minuut en
+#, fuzzy
+msgctxt "CreditsTable/3152744910848"
+msgid "minute and"
+msgstr "분 그리고"
+
+#. nl: minuten en
+#, fuzzy
+msgctxt "CreditsTable/3660339580928"
+msgid "minutes and"
+msgstr "분 그리고"
+
+#. nl: seconde.
+#, fuzzy
+msgctxt "CreditsTable/3747564326912"
+msgid "second."
+msgstr "초."
+
+#. nl: seconden.
+#, fuzzy
+msgctxt "CreditsTable/3825083453440"
+msgid "seconds."
+msgstr "초."
+
+#. nl: Het kostte je
+#, fuzzy
+msgctxt "CreditsTable/4034307919872"
+msgid "It took you"
+msgstr "당신은"
+
+#. nl: Je verzamelde een valorite brok.
+#, fuzzy
+msgctxt "CreditsTable/4238750879744"
+msgid "You collected a single valorite scrap."
+msgstr "발로라이트 파편 하나를 모았습니다."
+
+#. nl: Je verzamelde {scrapCount} valorite brokken.
+#, fuzzy
+msgctxt "CreditsTable/4400944615424"
+msgid "You collected {scrapCount} valorite scraps."
+msgstr "발로라이트 파편 {scrapCount}개를 모았습니다."
+
+#. nl: En je speelde niet een keer vals.
+#, fuzzy
+msgctxt "CreditsTable/4750804094976"
+msgid "And you did not cheat a single time."
+msgstr "그리고 속임수를 한 번도 쓰지 않았습니다."
+
+#. nl: En je speelde een keer vals.
+#, fuzzy
+msgctxt "CreditsTable/4824661594112"
+msgid "And you cheated one single time."
+msgstr "그리고 속임수를 딱 한 번 썼습니다."
+
+#. nl: En je speelde {cheatCount} keer vals.
+#, fuzzy
+msgctxt "CreditsTable/4879871217664"
+msgid "And you cheated a total of {cheatCount} times."
+msgstr "그리고 속임수를 총 {cheatCount}번 썼습니다."
+
+#. nl: EEN SPEL DOOR FINN SCHUURING
+#, fuzzy
+msgctxt "CreditsTable/19446378631168"
+msgid "A GAME BY FINN SCHUURING"
+msgstr "핀 스휴링 제작"
+
+#. nl: AANVULLEND ONTWERP
+#. ILSE BAARS
+#. MERIJN TRIMBOS
+#. RANDY QUERREVELD
+#, fuzzy
+msgctxt "CreditsTable/19567065534464"
+msgid ""
+"ADDITIONAL DESIGN\r\n"
+"\r\n"
+"ILSE BAARS\r\n"
+"MERIJN TRIMBOS\r\n"
+"RANDY QUERREVELD\r"
+msgstr ""
+"추가 디자인\r\n"
+"\r\n"
+"일서 바르스\r\n"
+"메레인 트림보스\r\n"
+"랜디 퀴레르펠트\r"
+
+#. nl: MET DANK AAN
+#. CATHY VAN DE LAAK
+#. JANDIRK VAN DINGENEN
+#, fuzzy
+msgctxt "CreditsTable/19581019983872"
+msgid ""
+"SPECIAL THANKS\r\n"
+"\r\n"
+"CATHY VAN DE LAAK\r\n"
+"JANDIRK VAN DINGENEN\r"
+msgstr ""
+"특별 감사\r\n"
+"\r\n"
+"캐시 판 데 라크\r\n"
+"얀디르크 판 딩에넨\r"
+
+#. nl: MET DANK AAN
+#. FRANK SCHUURING
+#. ILJA SCHUURING
+#. JOEP SCHUURING
+#. BRAM SCHUURING
+#, fuzzy
+msgctxt "CreditsTable/19594018131968"
+msgid ""
+"SPECIAL THANKS\r\n"
+"\r\n"
+"FRANK SCHUURING\r\n"
+"ILJA SCHUURING\r\n"
+"JOEP SCHUURING\r\n"
+"BRAM SCHUURING\r"
+msgstr ""
+"특별 감사\r\n"
+"\r\n"
+"프랑크 스휴링\r\n"
+"일랴 스휴링\r\n"
+"윱 스휴링\r\n"
+"브람 스휴링\r"
+
+#. nl: MET DANK AAN
+#. ORION KEREN PUTS
+#. DAVID KOLB
+#. JURRE DE GROOT
+#. MAXYM EBELING
+#. BENITO VAN DER ZANDEN
+#, fuzzy
+msgctxt "CreditsTable/19610669518848"
+msgid ""
+"SPECIAL THANKS\r\n"
+"\r\n"
+"ORION KEREN PUTS\r\n"
+"DAVID KOLB\r\n"
+"JURRE DE GROOT\r\n"
+"MAXYM EBELING\r\n"
+"BENITO VAN DER ZANDEN\r"
+msgstr ""
+"특별 감사\r\n"
+"\r\n"
+"오리온 케렌 푸츠\r\n"
+"다비트 콜프\r\n"
+"위러 데 흐롯\r\n"
+"막심 에벨링\r\n"
+"베니토 판 데르 잔덴\r"
+
+#. nl: MET DANK AAN
+#. ROEL VAN BROEKHOVEN
+#. KAAN WIJNAND
+#. PEPIJN BELDER
+#. JORIS BELDER
+#. MILO DAMMERS
+#, fuzzy
+msgctxt "CreditsTable/19644618215424"
+msgid ""
+"SPECIAL THANKS\r\n"
+"\r\n"
+"ROEL VAN BROEKHOVEN\r\n"
+"KAAN WIJNAND\r\n"
+"PEPIJN BELDER\r\n"
+"JORIS BELDER\r\n"
+"MILO DAMMERS\r"
+msgstr ""
+"특별 감사\r\n"
+"\r\n"
+"룰 판 브루크호번\r\n"
+"칸 베이난트\r\n"
+"페파인 벨더르\r\n"
+"요리스 벨더르\r\n"
+"밀로 다머르스\r"
+
+#. nl: Bedankt voor het spelen.
+#, fuzzy
+msgctxt "CreditsTable/19668009848832"
+msgid "Thank you for playing."
+msgstr "플레이해 주셔서 감사합니다."
+
+#. nl: MET DANK AAN
+#. KAREL MILLENAAR
+#. VALENTIJN MUIJRERS
+#. DIMME VAN DER HOUT
+#, fuzzy
+msgctxt "CreditsTable/14962634088353792"
+msgid ""
+"SPECIAL THANKS\n"
+"\n"
+"\n"
+"KAREL MILLENAAR\n"
+"VALENTIJN MUIJRERS\n"
+"DIMME VAN DER HOUT"
+msgstr ""
+"특별 감사\n"
+"\n"
+"\n"
+"카렐 밀레나르\n"
+"발렌테인 마위르르스\n"
+"디머 판 데르 하우트"
+
+#. nl: START
+#, fuzzy
+msgctxt "MenuTable/163376369664"
+msgid "START"
+msgstr "시작"
+
+#. nl: OPTIES
+#, fuzzy
+msgctxt "MenuTable/292066004992"
+msgid "OPTIONS"
+msgstr "설정"
+
+#. nl: CREDITS
+#, fuzzy
+msgctxt "MenuTable/473729699840"
+msgid "CREDITS"
+msgstr "제작진"
+
+#. nl: STOPPEN
+#, fuzzy
+msgctxt "MenuTable/611378368512"
+msgid "QUIT"
+msgstr "종료"
+
+#. nl: SPEL
+#, fuzzy
+msgctxt "MenuTable/3145241300992"
+msgid "GAME"
+msgstr "게임"
+
+#. nl: SCHERM
+#, fuzzy
+msgctxt "MenuTable/3200106991616"
+msgid "DISPLAY"
+msgstr "화면"
+
+#. nl: GELUID
+#, fuzzy
+msgctxt "MenuTable/3404436705280"
+msgid "AUDIO"
+msgstr "오디오"
+
+#. nl: TERUG
+#, fuzzy
+msgctxt "MenuTable/3519536795648"
+msgid "BACK"
+msgstr "뒤로"
+
+#. nl: SNELSCHAAK MODUS: {selectedOption}
+#, fuzzy
+msgctxt "MenuTable/3651112112128"
+msgid "SPEED CHESS MODE: {selectedOption}"
+msgstr "스피드 체스 모드: {selectedOption}"
+
+#. nl: SPEEDRUN MODUS: {selectedOption}
+#, fuzzy
+msgctxt "MenuTable/4545400639488"
+msgid "SPEEDRUN MODE: {selectedOption}"
+msgstr "스피드런 모드: {selectedOption}"
+
+#. nl: WIS OPSLAG
+#, fuzzy
+msgctxt "MenuTable/4897449545728"
+msgid "WIPE SAVE FILE"
+msgstr "저장 파일 삭제"
+
+#. nl: TOEPASSEN
+#, fuzzy
+msgctxt "MenuTable/6155984015360"
+msgid "APPLY"
+msgstr "적용"
+
+#. nl: *SPEEDRUN MODUS is ontgrendelt na minstens een keer alle regelboek
+#. paginas te hebben verzamelt. Het starten van het spel met dit geactiveerd
+#. overschrijft je opslagbestand!
+#, fuzzy
+msgctxt "MenuTable/18584314941440"
+msgid ""
+"*SPEEDRUN MODE is unlocked after obtaining all rulebook pages at least once."
+" Starting the game with this enabled overwrites your savefile!"
+msgstr ""
+"*스피드런 모드는 규칙서 페이지를 한 번 이상 모두 모으면 해금됩니다. 이 기능을 켜고 게임을 시작하면 저장 파일을 덮어씁니다!"
+
+#. nl: VOLLEDIG SCHERM: {selectedOption}
+#, fuzzy
+msgctxt "MenuTable/24722192306176"
+msgid "FULLSCREEN: {selectedOption}"
+msgstr "전체 화면: {selectedOption}"
+
+#. nl: RESOLUTIE: {selectedOption}
+#, fuzzy
+msgctxt "MenuTable/25504769740800"
+msgid "RESOLUTION: {selectedOption}"
+msgstr "해상도: {selectedOption}"
+
+#. nl: LIMITEER FPS: {selectedOption}
+#, fuzzy
+msgctxt "MenuTable/25654535753728"
+msgid "LIMIT FPS: {selectedOption}"
+msgstr "FPS 제한: {selectedOption}"
+
+#. nl: VSYNC: {selectedOption}
+#, fuzzy
+msgctxt "MenuTable/25910686093312"
+msgid "VSYNC: {selectedOption}"
+msgstr "수직 동기화: {selectedOption}"
+
+#. nl: MASTER: {selectedOption}
+#, fuzzy
+msgctxt "MenuTable/26709361266688"
+msgid "MASTER: {selectedOption}"
+msgstr "마스터: {selectedOption}"
+
+#. nl: EFFECTEN: {selectedOption}
+#, fuzzy
+msgctxt "MenuTable/26830199164928"
+msgid "EFFECTS: {selectedOption}"
+msgstr "효과음: {selectedOption}"
+
+#. nl: OMGEVING: {selectedOption}
+#, fuzzy
+msgctxt "MenuTable/26940761018368"
+msgid "AMBIENCE: {selectedOption}"
+msgstr "환경음: {selectedOption}"
+
+#. nl: AAN
+#, fuzzy
+msgctxt "MenuTable/28875077554176"
+msgid "ON"
+msgstr "켜기"
+
+#. nl: UIT
+#, fuzzy
+msgctxt "MenuTable/28930253623296"
+msgid "OFF"
+msgstr "끄기"
+
+#. nl: TAAL: {selectedOption}
+#, fuzzy
+msgctxt "MenuTable/49403301564416"
+msgid "LANGUAGE: {selectedOption}"
+msgstr "언어: {selectedOption}"
+
+#. nl: ENGELS
+#, fuzzy
+msgctxt "MenuTable/52106140422144"
+msgid "ENGLISH"
+msgstr "영어"
+
+#. nl: NEDERLANDS
+#, fuzzy
+msgctxt "MenuTable/52299200040960"
+msgid "DUTCH"
+msgstr "네덜란드어"
+
+#. nl: TEKST
+#, fuzzy
+msgctxt "MenuTable/3554045327151104"
+msgid "TEXT"
+msgstr "텍스트"
+
+#. nl: EXTRAS
+#, fuzzy
+msgctxt "MenuTable/73273375520743424"
+msgid "EXTRAS"
+msgstr "추가"
+
+#. nl: PRESTATIES
+#, fuzzy
+msgctxt "MenuTable/73273457448083456"
+msgid "ACHIEVEMENTS"
+msgstr "업적"
+
+#. nl: KLASSEMENT
+#, fuzzy
+msgctxt "MenuTable/73544992683483136"
+msgid "LEADERBOARD"
+msgstr "순위표"
+
+#. nl: GLOBAAL
+#, fuzzy
+msgctxt "MenuTable/73545085985775616"
+msgid "GLOBAL"
+msgstr "전체"
+
+#. nl: VRIENDEN
+#, fuzzy
+msgctxt "MenuTable/73545155778994176"
+msgid "FRIENDS"
+msgstr "친구"
+
+#. nl: Geen inzendingen om weer te geven.
+#, fuzzy
+msgctxt "MenuTable/73561248006430720"
+msgid "No entries to show."
+msgstr "표시할 항목이 없습니다."
+
+#. nl: SCHERM TRILLING: {selectedOption}
+#, fuzzy
+msgctxt "MenuTable/75709117962412032"
+msgid "SCREENSHAKE: {selectedOption}"
+msgstr "화면 흔들림: {selectedOption}"
+
+#. nl: VIDEO
+#, fuzzy
+msgctxt "MenuTable/75709623996801024"
+msgid "VIDEO"
+msgstr "영상"
+
+#. nl: DRUK OP ESC OM TE STOPPEN...
+#, fuzzy
+msgctxt "MenuTable/78960613576773632"
+msgid "HOLD ESC TO QUIT..."
+msgstr "ESC 길게 눌러 종료..."
+
+#. nl: Ik dacht dat je knipperde...
+#, fuzzy
+msgctxt "TrollDialogTable/306597879808"
+msgid "I thought you blinked..."
+msgstr "너 깜빡인 줄 알았는데..."
+
+#. nl: Nou, nou, nou...
+#, fuzzy
+msgctxt "TrollDialogTable/379071258624"
+msgid "Well, well, well..."
+msgstr "흐음, 흐음, 흐음..."
+
+#. nl: Je hebt me op heterdaad betrapt.
+#, fuzzy
+msgctxt "TrollDialogTable/509447004160"
+msgid "You caught me green handed."
+msgstr "딱 걸렸군."
+
+#. nl: Maar langs mij kom je niet!
+#, fuzzy
+msgctxt "TrollDialogTable/679823826944"
+msgid "But you will not get past me!"
+msgstr "하지만 날 지나칠 순 없지!"
+
+#. nl: Ik ben een trol met eer,
+#, fuzzy
+msgctxt "TrollDialogTable/729421471744"
+msgid "I am a troll of honor,"
+msgstr "나는 명예로운 트롤이라,"
+
+#. nl: Ik erken mijn fouten...
+#, fuzzy
+msgctxt "TrollDialogTable/1209375678464"
+msgid "I will own up to my mistake..."
+msgstr "나는 내 실수를 인정하지..."
+
+#. nl: Kan jij hetzelfde zeggen?
+#, fuzzy
+msgctxt "TrollDialogTable/1247854223360"
+msgid "Can you say the same?"
+msgstr "넌 그럴 수 있나?"
+
+#. nl: Oepsie!
+#, fuzzy
+msgctxt "TrollDialogTable/1277747027968"
+msgid "Whoopsie!"
+msgstr "앗차!"
+
+#. nl: Iedereen maakt foutjes toch?
+#, fuzzy
+msgctxt "TrollDialogTable/1336140128256"
+msgid "Everybody makes mistakes right?"
+msgstr "누구나 실수는 하는 법이지?"
+
+#. nl: Niet de rest vertellen!
+#, fuzzy
+msgctxt "TrollDialogTable/1350627254272"
+msgid "Do not tell the others!"
+msgstr "다른 녀석들한텐 비밀이다!"
+
+#. nl: We worden meestal niet betrapt!
+#, fuzzy
+msgctxt "TrollDialogTable/1389181296640"
+msgid "We don't usually get caught!"
+msgstr "우린 원래 잘 안 걸린다니까!"
+
+#. nl: Ik wilde de boel gewoon wat spannender maken.
+#, fuzzy
+msgctxt "TrollDialogTable/1408999383040"
+msgid "I was just trying to spice things up."
+msgstr "그저 일 좀 재밌게 만들려던 것뿐이야."
+
+#. nl: Je verveelt me...
+#, fuzzy
+msgctxt "TrollDialogTable/1505636147200"
+msgid "You bore me..."
+msgstr "지루하구나..."
+
+#. nl: Mateloos...
+#, fuzzy
+msgctxt "TrollDialogTable/1531426922496"
+msgid "Endlessly."
+msgstr "끝없이."
+
+#. nl: Doe dan, speel vals.
+#, fuzzy
+msgctxt "TrollDialogTable/1582769397760"
+msgid "Go on then, cheat."
+msgstr "그럼 가봐라, 속임수꾼."
+
+#. nl: Al deze beschuldigingen... Wat een verspilling van mijn tijd.
+#, fuzzy
+msgctxt "TrollDialogTable/1624641134592"
+msgid "All these accusations… It is a waste of my time."
+msgstr "이런 비난들은… 내 시간 낭비일 뿐이다."
+
+#. nl: Waarom stel je je verlies toch uit?
+#, fuzzy
+msgctxt "TrollDialogTable/1657646112768"
+msgid "Why prolong your inevitable loss?"
+msgstr "어차피 질 판에 왜 질질 끄는 거야?"
+
+#. nl: Van de laagste dieptes...
+#, fuzzy
+msgctxt "TrollDialogTable/1680974831616"
+msgid "From the weakest depths…"
+msgstr "가장 나락의 깊은 곳에서…"
+
+#. nl: Kruip je...
+#, fuzzy
+msgctxt "TrollDialogTable/1754668752896"
+msgid "You ascend…"
+msgstr "넌 오르지…"
+
+#. nl: Naar mijn niveau...
+#, fuzzy
+msgctxt "TrollDialogTable/1780472111104"
+msgid "To my level…"
+msgstr "내 수준까지…"
+
+#. nl: Zo, hoe is die daar nou gekomen?
+#, fuzzy
+msgctxt "TrollDialogTable/1818887741440"
+msgid "Oh how did that piece get here?"
+msgstr "어라, 저 기물은 어떻게 여기 온 거지?"
+
+#. nl: Dat is maf.
+#, fuzzy
+msgctxt "TrollDialogTable/1862101655552"
+msgid "That's crazy."
+msgstr "말도 안 돼."
+
+#. nl: Het is maar een kleine tegenslag.
+#, fuzzy
+msgctxt "TrollDialogTable/1879239581696"
+msgid "It's only a small setback."
+msgstr "겨우 작은 차질일 뿐이야."
+
+#. nl: Dus, "wreek" nu maar.
+#, fuzzy
+msgctxt "TrollDialogTable/1926115123200"
+msgid "So, have your \"revenge\" now."
+msgstr "자, 그럼 이제 네 \"복수\"를 해 봐."
+
+#. nl: Bedrieger! Bedrieger!
+#, fuzzy
+msgctxt "TrollDialogTable/2615646117888"
+msgid "Cheater cheater!"
+msgstr "속임수꾼! 속임수꾼!"
+
+#. nl: Dacht je nou echt dat ik kleurenblind was?
+#, fuzzy
+msgctxt "TrollDialogTable/3429194293248"
+msgid "Did you think I was color blind?"
+msgstr "내가 색맹인 줄 알았나?"
+
+#. nl: Gelukkig hebben we het regelboek ontworpen met kleurenblindheid in ons
+#. achterhoofd,
+#, fuzzy
+msgctxt "TrollDialogTable/3454561443840"
+msgid "Luckily we created the rulebook with colorblindness in mind,"
+msgstr "다행히 규칙서는 색맹을 염두에 두고 만들었지,"
+
+#. nl: Ik raad aan om die nog eens te lezen.
+#, fuzzy
+msgctxt "TrollDialogTable/5049038692352"
+msgid "I suggest you read it again."
+msgstr "다시 한번 읽어 보시지."
+
+#. nl: Hey die pionen bewegen niet zo!
+#, fuzzy
+msgctxt "TrollDialogTable/3528947425280"
+msgid "Hey those pawns can't move like that!"
+msgstr "이봐, 폰은 그렇게 못 움직여!"
+
+#. nl: Dacht je dat dat mij zou ontglippen?
+#, fuzzy
+msgctxt "TrollDialogTable/3640075509760"
+msgid "Did you think I wouldn't notice?"
+msgstr "내가 못 알아챌 줄 알았나?"
+
+#. nl: Weet je,
+#, fuzzy
+msgctxt "TrollDialogTable/3781146730496"
+msgid "You know,"
+msgstr "있잖아,"
+
+#. nl: Valsspeler!
+#, fuzzy
+msgctxt "TrollDialogTable/3854798708736"
+msgid "Cheater!"
+msgstr "속임수꾼!"
+
+#. nl: En dit was te elegant!
+#, fuzzy
+msgctxt "TrollDialogTable/3821516906496"
+msgid "And this was too elegant!"
+msgstr "그런데 이건 너무 우아했어!"
+
+#. nl: Ik heb zes winters lang de elegantie van paardenjongens bestudeerd...
+#, fuzzy
+msgctxt "TrollDialogTable/3810230034432"
+msgid ""
+"I actually studied horse guys for six winters to fully digest their "
+"elegance..."
+msgstr "난 사실 그 말 녀석들의 우아함을 온전히 음미하려고 여섯 겨울이나 연구했어..."
+
+#. nl: Alleen hij kan springen!
+#, fuzzy
+msgctxt "TrollDialogTable/3867767496704"
+msgid "Only he can jump!"
+msgstr "저 녀석만 뛸 수 있어!"
+
+#. nl: Ik dacht dat de tekening dat heel duidelijk maakte.
+#, fuzzy
+msgctxt "TrollDialogTable/3924864557056"
+msgid "I thought the drawing made that awefully clear."
+msgstr "그림이 그걸 아주 명백하게 보여 준다고 생각했는데."
+
+#. nl: Valsspelen, zo recht voor mijn ogen...
+#, fuzzy
+msgctxt "TrollDialogTable/3961208201216"
+msgid "Cheating right before my very eyes..."
+msgstr "내 눈앞에서 대놓고 속임수를 쓰다니..."
+
+#. nl: "Door de kroon zijn ze loom."
+#, fuzzy
+msgctxt "TrollDialogTable/4037867495424"
+msgid "\"Their crown weighs them down.\""
+msgstr "\"왕관이 그들의 몸을 무겁게 누르네.\""
+
+#. nl: Het rijmt zelfs!
+#, fuzzy
+msgctxt "TrollDialogTable/4048743325696"
+msgid "It even rhymes!"
+msgstr "심지어 운율도 맞잖아!"
+
+#. nl: Ze werken dan wel buiten het dorp,
+#, fuzzy
+msgctxt "TrollDialogTable/4085091164160"
+msgid "They may work out of town,"
+msgstr "마을 밖에서 일할 수도 있겠지,"
+
+#. nl: Maar dat is nog geen reden voor ongeldig bewegen!
+#, fuzzy
+msgctxt "TrollDialogTable/4149666668544"
+msgid "But that does not excuse invalid movement!"
+msgstr "하지만 그렇다고 규칙에 없는 움직임이 용서되진 않아!"
+
+#. nl: Nu versla ik je!
+#, fuzzy
+msgctxt "TrollDialogTable/4160110485504"
+msgid "Now I'll defeat you!"
+msgstr "이제 널 이기겠어!"
+
+#. nl: Dat is even te abstract, zelfs voor gevorderd trol schaken.
+#, fuzzy
+msgctxt "TrollDialogTable/4172848586752"
+msgid "That's too abstract, even for advanced troll chess."
+msgstr "그건 고급 트롤 체스라도 너무 추상적이야."
+
+#. nl: Eerlijk gezecht begrijp ik niet eens wat je zojuist gedaan hebt,
+#, fuzzy
+msgctxt "TrollDialogTable/4213805965312"
+msgid "Frankly, I can't even comprehend what you just did."
+msgstr "솔직히 방금 네가 한 짓은 이해조차 안 돼."
+
+#. nl: Laten we dit afronden...
+#, fuzzy
+msgctxt "TrollDialogTable/4224836984832"
+msgid "Let's just get this over with..."
+msgstr "그냥 이 일이나 끝내자..."
+
+#. nl: De koninging bewoog net,
+#, fuzzy
+msgctxt "TrollDialogTable/4316725796864"
+msgid "The queen just moved,"
+msgstr "방금 퀸이 움직였는데,"
+
+#. nl: Maar dat was niet volgens de trol tradities.
+#, fuzzy
+msgctxt "TrollDialogTable/4358563979264"
+msgid "But that was not in line with troll lore."
+msgstr "그건 트롤의 전승과 맞지 않았어."
+
+#. nl: Te denken dat ik zo'n overduidelijke zet niet zou opmerken.
+#, fuzzy
+msgctxt "TrollDialogTable/4444106809344"
+msgid "To think I would not notice such an obvious move."
+msgstr "그렇게 뻔한 수를 내가 못 알아챌 줄이야."
+
+#. nl: Uhm...
+#, fuzzy
+msgctxt "TrollDialogTable/4464621150208"
+msgid "Uhm..."
+msgstr "음..."
+
+#. nl: Je weet dat ik 'em nogsteeds kan zien toch?
+#, fuzzy
+msgctxt "TrollDialogTable/4493339549696"
+msgid "You know I can still see it right?"
+msgstr "내가 아직도 그걸 볼 수 있다는 거 알지?"
+
+#. nl: Dat stuk werkt niet buiten het dorp!
+#, fuzzy
+msgctxt "TrollDialogTable/4520120180736"
+msgid "That piece does not work out of town!"
+msgstr "그 말은 마을 밖에선 안 통한다고!"
+
+#. nl: En al zouden ze dat wel doen, missen ze het avondmaal!
+#, fuzzy
+msgctxt "TrollDialogTable/4546695290880"
+msgid "And if they did, they would miss supper!"
+msgstr "그랬다간 저녁밥을 놓칠걸!"
+
+#. nl: Niet voor te stellen!
+#, fuzzy
+msgctxt "TrollDialogTable/4556786786304"
+msgid "Unthinkable!"
+msgstr "상상도 못 할 일이지!"
+
+#. nl: Dus jij dacht even de cadeautjes naar jou kant te bewegen?
+#, fuzzy
+msgctxt "TrollDialogTable/4589586243584"
+msgid "So you think you can just move the gifts over to your side..."
+msgstr "그래서 선물들을 네 쪽으로 그냥 옮기면 된다고 생각한 거야..."
+
+#. nl: Dacht het even niet!
+#, fuzzy
+msgctxt "TrollDialogTable/4615456710656"
+msgid "Well not on my watch, you don't!"
+msgstr "내가 보고 있는데 그럴 순 없지!"
+
+#. nl: Een...
+#, fuzzy
+msgctxt "TrollDialogTable/4635425792000"
+msgid "One..."
+msgstr "하나..."
+
+#. nl: Twee...
+#, fuzzy
+msgctxt "TrollDialogTable/4656485392384"
+msgid "Two..."
+msgstr "둘..."
+
+#. nl: Drie...
+#, fuzzy
+msgctxt "TrollDialogTable/4677758902272"
+msgid "Three..."
+msgstr "셋..."
+
+#. nl: Ik tel geen drie torens in het spel,
+#, fuzzy
+msgctxt "TrollDialogTable/4694263488512"
+msgid "I do not count three towers in the game,"
+msgstr "게임에 탑은 셋이 아닌데,"
+
+#. nl: Je weet wel wat dat betekent.
+#, fuzzy
+msgctxt "TrollDialogTable/4719211208704"
+msgid "You know what that means."
+msgstr "그게 무슨 뜻인지 알겠지."
+
+#. nl: Ho! Ho! Ho!
+#, fuzzy
+msgctxt "TrollDialogTable/4757341626368"
+msgid "No! No! No!"
+msgstr "안 돼! 안 돼! 안 돼!"
+
+#. nl: De trol tradities! Ze zou nooit vreemdgaan!
+#, fuzzy
+msgctxt "TrollDialogTable/4776484429824"
+msgid "It goes against troll lore! She would never have an affair!"
+msgstr "트롤 전승에 어긋나! 그 애가 바람을 피울 리 없어!"
+
+#. nl: Je speelt op onsmakelijke spelwijzen.
+#, fuzzy
+msgctxt "TrollDialogTable/4787171516416"
+msgid "You play distastefully..."
+msgstr "맛이 없는 수를 두는군..."
+
+#. nl: Het moment is nu! Maak je klaar voor de elfde editie van gevorderd trol
+#. schaken!
+#, fuzzy
+msgctxt "TrollDialogTable/7777232117760"
+msgid ""
+"This is it! Get ready for the eleventh edition of advanced troll chess!"
+msgstr "바로 이거야! 고급 트롤 체스 제11판을 시작하지!"
+
+#. nl: Aan je rechterhand vind je het bedacht samengestelde regelboek.
+#, fuzzy
+msgctxt "TrollDialogTable/7857171357696"
+msgid "You will find the well curated rulebook to your right."
+msgstr "오른쪽에 잘 정리된 규칙서가 있지."
+
+#. nl: Laat het spel beginnen!
+#, fuzzy
+msgctxt "TrollDialogTable/7884560162816"
+msgid "Let the game commence!"
+msgstr "게임을 시작한다!"
+
+#. nl: ...
+#, fuzzy
+msgctxt "TrollDialogTable/7947923513344"
+msgid "..."
+msgstr "..."
+
+#. nl: Ik. uh-
+#, fuzzy
+msgctxt "TrollDialogTable/8149317214208"
+msgid "I. uh-"
+msgstr "나, 어-"
+
+#. nl: Ik wist niet dat dat kon.
+#, fuzzy
+msgctxt "TrollDialogTable/8163774980096"
+msgid "I did not know I could do that."
+msgstr "내가 그런 걸 할 수 있는 줄 몰랐어."
+
+#. nl: Vergeet dat dit ooit gebeurt is!
+#, fuzzy
+msgctxt "TrollDialogTable/8180149542912"
+msgid "Forget you saw anything!"
+msgstr "아무것도 못 본 걸로 해!"
+
+#. nl: Wat?
+#, fuzzy
+msgctxt "TrollDialogTable/8275234414592"
+msgid "What?!"
+msgstr "뭐라고?!"
+
+#. nl: Zet me onmiddelijk terug!
+#, fuzzy
+msgctxt "TrollDialogTable/8424484528128"
+msgid "Put me back right now!"
+msgstr "당장 날 돌려놔!"
+
+#. nl: Til me van deze kip af valsspeler!
+#, fuzzy
+msgctxt "TrollDialogTable/8493262725120"
+msgid "Get me off this chicken you cheater!"
+msgstr "이 닭에서 내려놔, 이 반칙꾼아!"
+
+#. nl: Waag het niet om me dit aan te doen!
+#, fuzzy
+msgctxt "TrollDialogTable/8517757460480"
+msgid "Don't you dare do this to me!"
+msgstr "날 이렇게 만들 생각은 꿈도 꾸지 마!"
+
+#. nl: Nee nee nee!
+#, fuzzy
+msgctxt "TrollDialogTable/8550686941184"
+msgid "No no no!"
+msgstr "아니야 아니야 아니야!"
+
+#. nl: We gaan niet transitioneren!
+#, fuzzy
+msgctxt "TrollDialogTable/8574317649920"
+msgid "We are not fading out!"
+msgstr "우린 사라지지 않아!"
+
+#. nl: STOP!!!
+#, fuzzy
+msgctxt "TrollDialogTable/8588569894912"
+msgid "STOP!!!"
+msgstr "멈춰!!!"
+
+#. nl: Denk niet dat je mij te slim af bent!
+#, fuzzy
+msgctxt "TrollDialogTable/8615077896192"
+msgid "Don't think you can outsmart me!"
+msgstr "날 속일 수 있을 거라 생각 마라!"
+
+#. nl: Ik kom van dit dier af...
+#, fuzzy
+msgctxt "TrollDialogTable/8693612044288"
+msgid "I'll get off this animal..."
+msgstr "이 짐승에서 내릴 거야..."
+
+#. nl: En daarna...
+#, fuzzy
+msgctxt "TrollDialogTable/8718765285376"
+msgid "And when I do..."
+msgstr "그리곤..."
+
+#. nl: Zoek ik lekker een nieuwe brug!
+#, fuzzy
+msgctxt "TrollDialogTable/8731813765120"
+msgid "I'll find another bridge!"
+msgstr "새 다리를 찾을 거다!"
+
+#. nl: ...
+#, fuzzy
+msgctxt "TrollDialogTable/9212309037056"
+msgid "..."
+msgstr "..."
+
+#. nl: Hoe is daar geen regel tegen?
+#, fuzzy
+msgctxt "TrollDialogTable/9283461210112"
+msgid "How is there not a rule against that?"
+msgstr "그걸 막는 규칙이 왜 없지?"
+
+#. nl: Oh nee...
+#, fuzzy
+msgctxt "TrollDialogTable/9294211211264"
+msgid "Oh no..."
+msgstr "아 이런..."
+
+#. nl: Niks uitspoken!
+#, fuzzy
+msgctxt "TrollDialogTable/9308731891712"
+msgid "Don't try anything!"
+msgstr "괜한 짓 하지 마라!"
+
+#. nl: Je verdenkt mij van valsspelen?
+#, fuzzy
+msgctxt "TrollDialogTable/9399815397376"
+msgid "You would accuse me of cheating?"
+msgstr "내가 속임수를 썼다고 의심하는 거냐?"
+
+#. nl: Dan neem ik mijn wraak!
+#, fuzzy
+msgctxt "TrollDialogTable/9447747903488"
+msgid "Well then I'll have my revenge!"
+msgstr "그럼 복수해 주마!"
+
+#. nl: Nu meteen!
+#, fuzzy
+msgctxt "TrollDialogTable/9472137781248"
+msgid "Right now!"
+msgstr "지금 당장!"
+
+#. nl: Ik denk dat je je dingen verbeeld makker...
+#, fuzzy
+msgctxt "TrollDialogTable/9483684700160"
+msgid "I think you're seeing things pal..."
+msgstr "친구, 헛것을 본 모양인데..."
+
+#. nl: Dat soort onderhandse zetten komen niet eens in mij op!
+#, fuzzy
+msgctxt "TrollDialogTable/9525355110400"
+msgid "Such foul plays don't even enter my mind!"
+msgstr "그런 비열한 수작은 꿈에도 안 꾼다!"
+
+#. nl: Verkeerd beschuldigt!
+#, fuzzy
+msgctxt "TrollDialogTable/9576840192000"
+msgid "False accusation!"
+msgstr "누명이야!"
+
+#. nl: Ik wed dat je gewoon jaloers bent op mijn spel...
+#, fuzzy
+msgctxt "TrollDialogTable/9607647354880"
+msgid "I bet you're just jealous of my game..."
+msgstr "내 실력이 부러운 거겠지..."
+
+#. nl: Sorry, ik heb mijn valsspeel broek onder de brug laten liggen!
+#, fuzzy
+msgctxt "TrollDialogTable/9635128434688"
+msgid "Sorry, I left my cheating pants under the bridge!"
+msgstr "미안, 속임수 바지는 다리 밑에 두고 왔어!"
+
+#. nl: In plaats daarvan draag ik mijn winnaars broek!
+msgctxt "TrollDialogTable/9657312108544"
+msgid "Instead I am wearing my victory pants!"
+msgstr ""
+
+#. nl: Oh daar heb je me!
+msgctxt "TrollDialogTable/9672772313088"
+msgid "I think you caught me!"
+msgstr ""
+
+#. nl: Oh wacht...
+msgctxt "TrollDialogTable/9699074793472"
+msgid "Oh wait..."
+msgstr ""
+
+#. nl: Fout.
+msgctxt "TrollDialogTable/9720167948288"
+msgid "Wrong."
+msgstr ""
+
+#. nl: En je beschuldigt mij van valsspelen?
+msgctxt "TrollDialogTable/9783988477952"
+msgid "And you accuse me of cheating?"
+msgstr ""
+
+#. nl: Hypocriet.
+msgctxt "TrollDialogTable/9803101921280"
+msgid "Such hypocrisy."
+msgstr ""
+
+#. nl: Je ziet ook altijd het slechte in mensen, of niet dan?
+msgctxt "TrollDialogTable/9814506233856"
+msgid "You just always see the worst in people, huh?"
+msgstr ""
+
+#. nl: Misschien ben je volgend potje iets minder cynisch.
+msgctxt "TrollDialogTable/9956491812864"
+msgid "Perhaps next game you'll go easier on the cynicism."
+msgstr ""
+
+#. nl: Als je denkt dat het slaan van mijn koning je zal laten oversteken,
+#, fuzzy
+msgctxt "TrollDialogTable/10339377242112"
+msgid "If you think capturing my king will let you pass,"
+msgstr "내 킹을 잡으면 다리를 건널 수 있으리라 생각한다면,"
+
+#. nl: Raad ik aan om regel elf nog een keer te lezen.
+#, fuzzy
+msgctxt "TrollDialogTable/10400639246336"
+msgid "I'd suggest you read rule eleven again."
+msgstr "규칙 열하나를 다시 읽어 보시게나."
+
+#. nl: Ha ha!
+#, fuzzy
+msgctxt "TrollDialogTable/10417424850944"
+msgid "Ha ha!"
+msgstr "하하!"
+
+#. nl: Geen zetten achter mijn rug om doen alsjeblieft...
+#, fuzzy
+msgctxt "TrollDialogTable/10434315313152"
+msgid "Please do not perform your turn while im looking away..."
+msgstr "내가 딴 데 보는 동안 수를 두지 마시게..."
+
+#. nl: Straks mis ik je blunders!
+#, fuzzy
+msgctxt "TrollDialogTable/10460856868864"
+msgid "I might not catch your stupidity!"
+msgstr "그러다 니 멍청한 수작을 놓치면 어쩌나!"
+
+#. nl: Ik zou alleen iemand beschuldigen als ik zeker wist dat ze
+#. valsspeelde...
+#, fuzzy
+msgctxt "TrollDialogTable/10482482700288"
+msgid "I would only accuse someone of cheating if i were absolutely sure..."
+msgstr "확실할 때만 속임수를 의심하는 편이라네..."
+
+#. nl: Niet dat ik ooit zo'n stunt bij jou zou uithalen...
+#, fuzzy
+msgctxt "TrollDialogTable/10507807907840"
+msgid "Not that I would ever cheat against you..."
+msgstr "나라면 네게 속임수를 쓰진 않겠지..."
+
+#. nl: Ze zeggen dat alleen de paardenjongen kan springen...
+#, fuzzy
+msgctxt "TrollDialogTable/10532155842560"
+msgid "They say only the horseguy can jump..."
+msgstr "말 타는 녀석만 뛸 수 있다더군..."
+
+#. nl: Maar ik doe een aardige salto als het er op aan komt!
+#, fuzzy
+msgctxt "TrollDialogTable/10639194480640"
+msgid "But I do a mean somersault if it comes to it!"
+msgstr "하지만 필요하다면 나도 제법 재주넘기를 하지!"
+
+#. nl: Onder je neus,
+#, fuzzy
+msgctxt "TrollDialogTable/10918379937792"
+msgid "Just under your nose,"
+msgstr "바로 네 코앞에,"
+
+#. nl: Het puntje van je tong...
+#, fuzzy
+msgctxt "TrollDialogTable/10960322977792"
+msgid "The tip of your tongue..."
+msgstr "혀끝에 맴도는 것..."
+
+#. nl: Waag je een gok,
+#, fuzzy
+msgctxt "TrollDialogTable/10991306301440"
+msgid "Don't take a guess,"
+msgstr "찍지 말고,"
+
+#. nl: Dan lijk je heel dom...
+#, fuzzy
+msgctxt "TrollDialogTable/11010243584000"
+msgid "That would not be fun..."
+msgstr "그러면 재미없을 테니..."
+
+#. nl: Vele antwoorden,
+#, fuzzy
+msgctxt "TrollDialogTable/11020158918656"
+msgid "Many an answer,"
+msgstr "답은 많아도,"
+
+#. nl: Maar een vraag ik om...
+#, fuzzy
+msgctxt "TrollDialogTable/11031626145792"
+msgid "I look for just one..."
+msgstr "난 하나만 원하지..."
+
+#. nl: ...
+#, fuzzy
+msgctxt "TrollDialogTable/11042585862144"
+msgid ". . ."
+msgstr ". . ."
+
+#. nl: Snap je 'em?
+#, fuzzy
+msgctxt "TrollDialogTable/11053302308864"
+msgid "Do you get it?"
+msgstr "알겠나?"
+
+#. nl: Het is een RAADSEL.
+#, fuzzy
+msgctxt "TrollDialogTable/11064090058752"
+msgid "It's a RIDDLE."
+msgstr "이건 수수께끼야."
+
+#. nl: En ik vind RAADSELS zoooooooooooooooooooooo saai.
+#, fuzzy
+msgctxt "TrollDialogTable/11073690820608"
+msgid "And I find RIDDLES soooooooooooooooooooooo boring."
+msgstr "그리고 난 수수께끼가 너~~~무 지루하단 말이야."
+
+#. nl: Dus als je de brug over wilt steken...
+#, fuzzy
+msgctxt "TrollDialogTable/11089457209344"
+msgid "So if you wish to cross this bridge..."
+msgstr "그러니 이 다리를 건너려면..."
+
+#. nl: Zul je een spel moeten spelen...
+#, fuzzy
+msgctxt "TrollDialogTable/11105336844288"
+msgid "You'll have to play a game..."
+msgstr "게임을 해야 할 거야..."
+
+#. nl: MIJN SPEL!
+#, fuzzy
+msgctxt "TrollDialogTable/11117651320832"
+msgid "MY GAME!"
+msgstr "내 게임을!"
+
+#. nl: Je had me bijna laten geloven dat je een jongleur bent.
+#, fuzzy
+msgctxt "TrollDialogTable/11699027992576"
+msgid "You almost tricked me into believing you were a juggler."
+msgstr "넌 날 거의 속여서 곡예사인 줄 믿게 했어."
+
+#. nl: Ik had het mis.
+#, fuzzy
+msgctxt "TrollDialogTable/11760998834176"
+msgid "I was mistaken."
+msgstr "내가 착각했군."
+
+#. nl: Je bent duidelijk geen jongleur.
+#, fuzzy
+msgctxt "TrollDialogTable/11775385296896"
+msgid "You are clearly not a juggler."
+msgstr "넌 분명히 곡예사가 아니야."
+
+#. nl: . . .
+#, fuzzy
+msgctxt "TrollDialogTable/11909942763520"
+msgid ". . ."
+msgstr ". . ."
+
+#. nl: Daar heb je me...
+#, fuzzy
+msgctxt "TrollDialogTable/12748459630592"
+msgid "You got me..."
+msgstr "날 잡았구나..."
+
+#. nl: . . .
+#, fuzzy
+msgctxt "TrollDialogTable/13033370312704"
+msgid ". . ."
+msgstr ". . ."
+
+#. nl: Ik heb misschien niet gewonnen...
+#, fuzzy
+msgctxt "TrollDialogTable/13070187913216"
+msgid "I may not have won the game..."
+msgstr "내가 게임에서 이기진 못했지만..."
+
+#. nl: Maar ik laat op z'n minst een waardige opvolger na...
+#, fuzzy
+msgctxt "TrollDialogTable/13083559354368"
+msgid "But at least i'll leave a worthy successor..."
+msgstr "그래도 걸맞은 후계자는 남겨두지..."
+
+#. nl: Jij...
+#, fuzzy
+msgctxt "TrollDialogTable/13096037408768"
+msgid "You..."
+msgstr "너..."
+
+#. nl: Valsspeler.
+#, fuzzy
+msgctxt "TrollDialogTable/13109253660672"
+msgid "Cheater."
+msgstr "사기꾼."
+
+#. nl: . . .
+#, fuzzy
+msgctxt "TrollDialogTable/13883178246144"
+msgid ". . ."
+msgstr ". . ."
+
+#. nl: Zelfs na al mijn trucs...
+#, fuzzy
+msgctxt "TrollDialogTable/14076250447872"
+msgid "Even after all my tricks..."
+msgstr "내 온갖 속임수에도..."
+
+#. nl: Speel je nogsteeds niet vals?
+#, fuzzy
+msgctxt "TrollDialogTable/14082629984256"
+msgid "You still refused to cheat?"
+msgstr "너는 끝까지 속임수를 안 쓰는 거냐?"
+
+#. nl: Ben je een sukkel?
+#, fuzzy
+msgctxt "TrollDialogTable/14091299610624"
+msgid "Are you some kind of idiot?"
+msgstr "너 혹시 멍청이냐?"
+
+#. nl: Waarom geef je niet toe?
+#, fuzzy
+msgctxt "TrollDialogTable/14099663052800"
+msgid "Why won't you do it?"
+msgstr "왜 안 하는 거야?"
+
+#. nl: Probeer je mij de les te lezen?
+#, fuzzy
+msgctxt "TrollDialogTable/14107984551936"
+msgid "Are you trying to teach me a lesson?"
+msgstr "내게 교훈이라도 주려는 거냐?"
+
+#. nl: Mij verander je niet...
+#, fuzzy
+msgctxt "TrollDialogTable/14115844677632"
+msgid "You can't change me..."
+msgstr "날 바꿀 순 없어..."
+
+#. nl: Mij verander je niet...
+#, fuzzy
+msgctxt "TrollDialogTable/14127379013632"
+msgid "You can't change me..."
+msgstr "날 바꿀 순 없어..."
+
+#. nl: Mij verander je niet...
+#, fuzzy
+msgctxt "TrollDialogTable/14136820391936"
+msgid "You can't change me..."
+msgstr "날 바꿀 순 없어..."
+
+#. nl: Mij verander je niet.
+#, fuzzy
+msgctxt "TrollDialogTable/14152498700288"
+msgid "You can't change me."
+msgstr "날 바꿀 순 없어."
+
+#. nl: Zo doen we dat!
+#, fuzzy
+msgctxt "TrollDialogTable/14594259574784"
+msgid "That's the spirit!"
+msgstr "그래, 바로 그거야!"
+
+#. nl: Alleen winnaars steken hier over!
+#, fuzzy
+msgctxt "TrollDialogTable/14664589664256"
+msgid "Only winners cross this bridge!"
+msgstr "이 다리를 건너는 건 승자뿐이다!"
+
+#. nl: Maar natuurlijk!
+#, fuzzy
+msgctxt "TrollDialogTable/14705614151680"
+msgid "Well of course!"
+msgstr "물론이지!"
+
+#. nl: Ik laat nooit een kans liggen om mijn favoriete spel te spelen!
+#, fuzzy
+msgctxt "TrollDialogTable/15203368984576"
+msgid "I'd never pass up the opportunity to play my favorite game!"
+msgstr "내가 가장 좋아하는 게임을 할 기회를 절대 놓치지 않지!"
+
+#. nl: Het is ons lot om eeuwig te dansen!
+#, fuzzy
+msgctxt "TrollDialogTable/14769845723136"
+msgid "It's in our fate to dance forever!"
+msgstr "영원히 춤추는 게 우리 운명이야!"
+
+#. nl: Maar hou je MIJN tempo bij?
+#, fuzzy
+msgctxt "TrollDialogTable/14797205168128"
+msgid "But can you keep up with MY tempo?"
+msgstr "하지만 내 리듬을 따라올 수 있겠나?"
+
+#. nl: Hier gaan we.
+#, fuzzy
+msgctxt "TrollDialogTable/14831514574848"
+msgid "Here we go."
+msgstr "그럼, 간다."
+
+#. nl: Alweer.
+#, fuzzy
+msgctxt "TrollDialogTable/14855535353856"
+msgid "Again."
+msgstr "또다시."
+
+#. nl: Blijf het proberen reiziger.
+#, fuzzy
+msgctxt "TrollDialogTable/14867606560768"
+msgid "Keep trying, adventurer."
+msgstr "계속 해봐라, 모험가여."
+
+#. nl: Ik versla je.
+#, fuzzy
+msgctxt "TrollDialogTable/14895087640576"
+msgid "I'll kick you down."
+msgstr "널 쫓아내줄게."
+
+#. nl: Elke.
+#, fuzzy
+msgctxt "TrollDialogTable/14916910604288"
+msgid "Every."
+msgstr "매번."
+
+#. nl: Keer.
+#, fuzzy
+msgctxt "TrollDialogTable/14928793067520"
+msgid "Time."
+msgstr "번마다."
+
+#. nl: Ik ben verbaasd dat je jezelf nog niet van de brug hebt gekiepert.
+#, fuzzy
+msgctxt "TrollDialogTable/14958002200576"
+msgid "I'm suprised you haven't thrown yourself off the bridge yet. "
+msgstr "네가 아직 다리에서 뛰어내리지 않은 게 신기하군. "
+
+#. nl: Ach ja...
+#, fuzzy
+msgctxt "TrollDialogTable/14975811215360"
+msgid "Oh well…"
+msgstr "뭐 어쩔 수 없지…"
+
+#. nl: Blijven proberen!
+#, fuzzy
+msgctxt "TrollDialogTable/14987047755776"
+msgid "Keep trying!"
+msgstr "계속 해봐!"
+
+#. nl: Deze keer, deel ik een geheim met je.
+#, fuzzy
+msgctxt "TrollDialogTable/15044878819328"
+msgid "This time, I'll share with you a secret."
+msgstr "이번엔 비밀 하나를 알려주지."
+
+#. nl: Ik heb eens goed in de spiegel gekeken ter inspiratie voor regel
+#. drieentwintig.
+#, fuzzy
+msgctxt "TrollDialogTable/15077288206336"
+msgid ""
+"I did a lot of soul searching to get inspiration for rule twenty-three."
+msgstr "규칙 스물셋의 영감을 얻으려고 꽤 깊이 고민했지."
+
+#. nl: Best een gaaf geheimpje toch?
+#, fuzzy
+msgctxt "TrollDialogTable/15087778160640"
+msgid "Pretty cool secret huh?"
+msgstr "꽤 멋진 비밀 아니냐?"
+
+#. nl: Dat ging eens effe slecht.
+#, fuzzy
+msgctxt "TrollDialogTable/15521909596160"
+msgid "Well that was bad."
+msgstr "저번엔 정말 형편없었어."
+
+#. nl: Laat maar weten als je nog een keer wilt!
+#, fuzzy
+msgctxt "TrollDialogTable/15563512897536"
+msgid "Let me know if you want to play again!"
+msgstr "또 하고 싶으면 말해!"
+
+#. nl: Zo, jij hebt het vorig potje verknald.
+#, fuzzy
+msgctxt "TrollDialogTable/15573042356224"
+msgid "Wow you really blew last game."
+msgstr "와, 지난 판 정말 망쳤구나."
+
+#. nl: Ik zal het je de volgende keer makkelijker maken.
+#, fuzzy
+msgctxt "TrollDialogTable/15582223687680"
+msgid "Say, I'll go easy on you next time."
+msgstr "다음엔 봐줄게."
+
+#. nl: Zal niet eens mijn speciale zet doen!
+#, fuzzy
+msgctxt "TrollDialogTable/15675156881408"
+msgid "I won't even do my special move!"
+msgstr "내 필살기도 안 쓸 거야!"
+
+#. nl: En we zijn nog niet eens bij het gevorderde deel aangekomen!
+#, fuzzy
+msgctxt "TrollDialogTable/15704626061312"
+msgid "And we hadn't even gotten to the advanced part yet!"
+msgstr "그리고 우리 고급 단계에도 아직 못 갔잖아!"
+
+#. nl: Ik wacht hier op je terugkomst!
+#, fuzzy
+msgctxt "TrollDialogTable/15729586364416"
+msgid "I'll be waiting here for your return."
+msgstr "여기서 네가 돌아오길 기다리고 있겠다."
+
+#. nl: Blijf niet te lang weg!
+#, fuzzy
+msgctxt "TrollDialogTable/15747064029184"
+msgid "Don't be gone too long now."
+msgstr "너무 오래 비우지 마라."
+
+#. nl: Rust uit avonturier.
+#, fuzzy
+msgctxt "TrollDialogTable/15776264773632"
+msgid "Rest up adventurer."
+msgstr "푹 쉬어라, 모험가."
+
+#. nl: Ik denk dat we hier nog even zitten namelijk.
+#, fuzzy
+msgctxt "TrollDialogTable/15794220589056"
+msgid "I think we are gonna be here for quite some time."
+msgstr "우린 꽤 오래 여기 있을 것 같구나."
+
+#. nl: Ik zou vaarwel zeggen, maar ik denk dat we allebij weten dat je terug
+#. zal komen.
+#, fuzzy
+msgctxt "TrollDialogTable/15824717373440"
+msgid "I'd say farewell, but I think we both know that you'll be back."
+msgstr "작별이라 말하고 싶지만, 우린 둘 다 네가 돌아올 거란 걸 알지."
+
+#. nl: Best verslavend of niet dan?
+#, fuzzy
+msgctxt "TrollDialogTable/15844216692736"
+msgid "Quite addicting, isn't it?"
+msgstr "제법 중독되네, 그렇지?"
+
+#. nl: We beginnen elkaar toch aardig goed te kennen!
+#, fuzzy
+msgctxt "TrollDialogTable/15856187236352"
+msgid "I feel like we are really getting to know eachother!"
+msgstr "우리 이제 서로 잘 알아가는 것 같아!"
+
+#. nl: Verschrikkelijk!
+#, fuzzy
+msgctxt "TrollDialogTable/15872654073856"
+msgid "I hate it."
+msgstr "난 싫어."
+
+#. nl: Je tijd is op.
+#, fuzzy
+msgctxt "TrollDialogTable/16248778285056"
+msgid "Your time is up."
+msgstr "네 시간은 끝났다."
+
+#. nl: En niet alleen figuratief gezien...
+#, fuzzy
+msgctxt "TrollDialogTable/16303815942144"
+msgid "And not just figuratively..."
+msgstr "그리고 비유적으로만 그런 게 아니라…"
+
+#. nl: Ach nee!
+#, fuzzy
+msgctxt "TrollDialogTable/16321834672128"
+msgid "Oh no!"
+msgstr "이런!"
+
+#. nl: En je speelde op zo'n hoog tempo...
+#, fuzzy
+msgctxt "TrollDialogTable/16339975036928"
+msgid "You were playing at such a breakneck pace..."
+msgstr "엄청난 속도로 두고 있었는데..."
+
+#. nl: Verloor alsnog wel.
+#, fuzzy
+msgctxt "TrollDialogTable/16364025176064"
+msgid "Still lost though."
+msgstr "그래도 진 거잖아."
+
+#. nl: Je was te sloom om mij te stoppen!
+#, fuzzy
+msgctxt "TrollDialogTable/16382027128832"
+msgid "You were too slow to stop me!"
+msgstr "날 막기엔 네가 너무 느렸어!"
+
+#. nl: Ik ben de god van snelheid! Hercules!
+#, fuzzy
+msgctxt "TrollDialogTable/16408002453504"
+msgid "Im like the god of speed! Hercules!"
+msgstr "난 속도의 신이라니까! 헤라클레스!"
+
+#. nl: Moet je dat eens zien...
+#, fuzzy
+msgctxt "TrollDialogTable/16429254991872"
+msgid "Well would you look at that..."
+msgstr "이거 좀 봐라..."
+
+#. nl: Om een of andere reden is de magische zandloper helemaal leeg...
+#, fuzzy
+msgctxt "TrollDialogTable/16474410868736"
+msgid "For some reason the magical hourglass is all empty..."
+msgstr "어찌 된 일인지 마법 모래시계가 텅 비었네..."
+
+#. nl: We weten allebij wat dat betekent.
+#, fuzzy
+msgctxt "TrollDialogTable/16492324741120"
+msgid "We both know what that means."
+msgstr "그게 무슨 뜻인지 우리 둘 다 알지."
+
+#. nl: Deze brug zal je nooit oversteken!
+#, fuzzy
+msgctxt "TrollDialogTable/16837637595136"
+msgid "You are never crossing this bridge!"
+msgstr "넌 절대 이 다리를 못 건너!"
+
+#. nl: Hier komt het!
+#, fuzzy
+msgctxt "TrollDialogTable/16899679739904"
+msgid "Here it comes! "
+msgstr "간다! "
+
+#. nl: Reizigers afmaken in dit spel is deel van de trol traditie!
+#, fuzzy
+msgctxt "TrollDialogTable/16937982124032"
+msgid "It is troll tradition to stomp bypassers in this game!"
+msgstr "이 게임에서 지나가는 자를 밟아 뭉개는 건 트롤의 전통이야!"
+
+#. nl: Hier komt het trollen feest!
+#, fuzzy
+msgctxt "TrollDialogTable/16956449644544"
+msgid "Here comes the troll town!"
+msgstr "트롤 마을이 온다!"
+
+#. nl: Maak je klaar voor mijn speciale zet!
+#, fuzzy
+msgctxt "TrollDialogTable/16990230568960"
+msgid "Get ready for my special move!"
+msgstr "내 필살기 받을 준비해!"
+
+#. nl: Ik maak het vervolg nog moeilijker!
+#, fuzzy
+msgctxt "TrollDialogTable/17007301386240"
+msgid "I'll make the sequel even harder!"
+msgstr "속편은 더 어렵게 만들 거야!"
+
+#. nl: "Casuals" kunnen me barsten!
+#, fuzzy
+msgctxt "TrollDialogTable/17028260323328"
+msgid "I don't pander to \"casuals\"!"
+msgstr "\"라이트 유저\"한테 굽신대지 않아!"
+
+#. nl: Die zet was echt bagger.
+#, fuzzy
+msgctxt "TrollDialogTable/17046715260928"
+msgid "That move was really bad!"
+msgstr "그 수는 진짜 형편없었어!"
+
+#. nl: Ik zal eens even voordoen hoe dit spel bedoelt was om te spelen...
+#, fuzzy
+msgctxt "TrollDialogTable/17070329192448"
+msgid "I'll show you how this game was meant to be played… "
+msgstr "이 게임이 어떻게 두는 건지 내가 보여 주지… "
+
+#. nl: Wat je nu ruikt?
+#, fuzzy
+msgctxt "TrollDialogTable/17089732042752"
+msgid "What you're smelling right now?"
+msgstr "지금 네가 맡고 있는 냄새?"
+
+#. nl: Het bloed en zweet dat ik dit spel geschonken heb.
+#, fuzzy
+msgctxt "TrollDialogTable/17140004970496"
+msgid "Its the blood and sweat I poured into this game."
+msgstr "그건 내가 이 게임에 쏟은 피와 땀이야."
+
+#. nl: Mijn gebrek aan baden is het bewijs van mijn toewijding!
+#, fuzzy
+msgctxt "TrollDialogTable/17153388994560"
+msgid "My lack of bathing is a testament to my dedication!"
+msgstr "내가 씻지 않는 건 헌신의 증거라구!"
+
+#. nl: En ik heb nog een hoop andere kaskrakers in de wachtrij staan.
+#, fuzzy
+msgctxt "TrollDialogTable/17176210202624"
+msgid "And I've got plenty of other hits in the making too!"
+msgstr "그리고 만드는 중인 대박작도 잔뜩 있지!"
+
+#. nl: Iedereen zal me erkennen na het uitbrengen van "Steen, Papier, Draak"!
+#, fuzzy
+msgctxt "TrollDialogTable/17210817404928"
+msgid "I'll be recognized by everyone after I release \"Rock, Paper, Dragons\"!"
+msgstr "\"바위, 보, 드래곤\"만 내 놓으면 모두가 날 알아볼 거야!"
+
+#. nl: Hoe ik dit hele ding geregeld heb?
+#, fuzzy
+msgctxt "TrollDialogTable/17226407632896"
+msgid "How I orchestrate this whole thing?"
+msgstr "이 모든 걸 어떻게 꾸미냐고?"
+
+#. nl: Magie.
+#, fuzzy
+msgctxt "TrollDialogTable/17310557954048"
+msgid "Magic."
+msgstr "마법이지."
+
+#. nl: Duh.
+#, fuzzy
+msgctxt "TrollDialogTable/17325628088320"
+msgid "Duh."
+msgstr "당연하잖아."
+
+#. nl: Ik trap echt niet in die "naive" stunt van jou.
+#, fuzzy
+msgctxt "TrollDialogTable/17346159206400"
+msgid "Your \"naive\" shtick won't work on me!"
+msgstr "네 \"순진한\" 연기 같은 건 안 통한다구!"
+
+#. nl: Winnen uit medelijden zul je nooit!
+#, fuzzy
+msgctxt "TrollDialogTable/17370452615168"
+msgid "I'll never let you win out of pity! "
+msgstr "동정으로 이기게 해 줄 순 없어! "
+
+#. nl: Wat? Je zag dat?
+#, fuzzy
+msgctxt "TrollDialogTable/18466336169984"
+msgid "What? You saw that?"
+msgstr "뭐? 그걸 봤다고?"
+
+#. nl: Steek de brug over.
+#, fuzzy
+msgctxt "OverworldTable/84334710784"
+msgid "Cross the bridge."
+msgstr "다리를 건너라."
+
+#. nl: [ SPATIE ] UITDAGEN
+#, fuzzy
+msgctxt "OverworldTable/2339918155776"
+msgid "[ SPACE ] CHALLENGE"
+msgstr "[ SPACE ] 도전"
+
+#. nl: [ SPATIE ] LEES
+#, fuzzy
+msgctxt "OverworldTable/74211993468112896"
+msgid "[ SPACE ] READ"
+msgstr "[ SPACE ] 읽기"
+
+#. nl: ACT
+#, fuzzy
+msgctxt "OverworldTable/75781217360306176"
+msgid "ACT"
+msgstr "행동"

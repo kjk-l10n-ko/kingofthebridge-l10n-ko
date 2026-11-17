@@ -1,0 +1,2 @@
+RULE 10 / IF THE WHITE KING DIES, BLACK WINS THE GAME.
+규칙 10 / 백 킹이 죽으면 흑이 이긴다.

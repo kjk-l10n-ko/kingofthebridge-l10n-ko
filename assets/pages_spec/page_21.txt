@@ -1,0 +1,2 @@
+RULE 21 / IF THE QUEEN CAPTURES A PIECE, THE WORLD FLIPS UPSIDEDOWN BUT LIKE, SIDEWAYS.
+규칙 21 / 퀸이 기물을 잡으면 세상이 위아래로 뒤집힌다. 아니, 옆으로.

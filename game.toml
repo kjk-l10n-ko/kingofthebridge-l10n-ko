@@ -1,0 +1,10 @@
+# Game repo configuration for tools-l10n-ko
+slug = "kingofthebridge"
+steam_appid = 2523120
+adapter = "kingofthebridge"      # adapters/ 모듈 없음: scripts/extract.py, scripts/build_patch.py 로 Unity Localization 번들을 직접 고친다
+track = "a"                      # 설치기(zstd_delta) 트랙
+pipeline_repo = "/mnt/h/02_Workspace/40_WSL/kjk-l10n-ko/tools-l10n-ko"
+pipeline_ref = "7d4660974a0643f5d786334376ea9b15a043fded"
+source = "/mnt/s/Installation/Steam/steamapps/common/King of the Bridge"
+font = "galmuri"
+locale_slot = "nl"               # 한국어 로케일이 없어 Dutch(nl) 슬롯을 한국어로 덮어쓴다 (사용자 결정)

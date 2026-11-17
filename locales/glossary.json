@@ -1,0 +1,72 @@
+[
+ {
+  "term": "Troll",
+  "ko": "트롤",
+  "kind": "term",
+  "count": 1,
+  "source": "manual"
+ },
+ {
+  "term": "bridge",
+  "ko": "다리",
+  "kind": "term",
+  "count": 1,
+  "source": "manual"
+ },
+ {
+  "term": "queen",
+  "ko": "퀸",
+  "kind": "term",
+  "count": 1,
+  "source": "manual"
+ },
+ {
+  "term": "rook",
+  "ko": "룩",
+  "kind": "term",
+  "count": 1,
+  "source": "manual"
+ },
+ {
+  "term": "bishop",
+  "ko": "비숍",
+  "kind": "term",
+  "count": 1,
+  "source": "manual"
+ },
+ {
+  "term": "knight",
+  "ko": "나이트",
+  "kind": "term",
+  "count": 1,
+  "source": "manual"
+ },
+ {
+  "term": "pawn",
+  "ko": "폰",
+  "kind": "term",
+  "count": 1,
+  "source": "manual"
+ },
+ {
+  "term": "Rulebook",
+  "ko": "규칙서",
+  "kind": "term",
+  "count": 1,
+  "source": "manual"
+ },
+ {
+  "term": "rule",
+  "ko": "규칙",
+  "kind": "term",
+  "count": 1,
+  "source": "manual"
+ },
+ {
+  "term": "Ascension",
+  "ko": "승천",
+  "kind": "term",
+  "count": 1,
+  "source": "manual"
+ }
+]

@@ -1,0 +1,2 @@
+RULE 20 / ANY PAWN THAT REACHES THE GREAT BEYOND (THE FURTHEST SPACE FROM THEM) ASCENDS
+규칙 20 / 위대한 저편에 닿은 폰은 승천한다. (저편은 그에게서 가장 먼 칸이다)
