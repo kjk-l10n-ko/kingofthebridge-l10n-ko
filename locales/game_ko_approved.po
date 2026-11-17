@@ -146,7 +146,7 @@ msgstr "상대를 속임수로 잘못 고발했나?"
 #, fuzzy
 msgctxt "RuleBreakTable/174242422784"
 msgid "was moved by the wrong color."
-msgstr "잘못된 색이 움직였다."
+msgstr "잘못된 색깔이 움직였다."
 
 #. nl: was ook een koningin?
 #, fuzzy
@@ -326,7 +326,7 @@ msgstr "노력조차 하지 않나?"
 #, fuzzy
 msgctxt "RuleBreakTable/2131422109696"
 msgid "Does not suspect the other color?"
-msgstr "다른 색을 의심하지 않나?"
+msgstr "다른 색깔을 의심하지 않나?"
 
 #. nl: begrijpt deze pagina niet?
 #, fuzzy

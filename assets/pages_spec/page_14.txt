@@ -1,2 +1,2 @@
 RULE 14 / TOWERS CAN'T NORMALLY MOVE. BUT IN THIS WORLD OF ABSTRACTION, HE IS CAN MOVE AS WELL
-규칙 14 / 탑은 원래 못 움직인다. 하지만 이 추상의 세계에서 그도 움직일 수 있다.
+규칙 14 / 탑은 원래 못 움직인다. 하지만 추상적인 이 세계에선 탑도 움직일 수 있다.
