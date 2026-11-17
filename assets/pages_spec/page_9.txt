@@ -1,2 +1,2 @@
 RULE 09 / ONLY HE CAN JUMP OVER OTHER PIECES.
-규칙 09 / 오직 그만이 다른 말들을 뛰어넘을 수 있다.
+규칙 09 / 오직 말만 다른 기물들을 뛰어넘을 수 있다.
