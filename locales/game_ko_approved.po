@@ -188,7 +188,7 @@ msgstr "히힝 울었다."
 #, fuzzy
 msgctxt "RuleBreakTable/658911027200"
 msgid "jumped when only he can jump."
-msgstr "오직 말만 뛸 수 있는데 뛰었다."
+msgstr "오직 말만 뛰어넘을 수 있는데 뛰어넘었다."
 
 #. nl: stierf en zwart wint het spel?
 #, fuzzy
@@ -1020,7 +1020,7 @@ msgstr "내가 말 녀석들의 우아함을 완전히 소화하려고 여섯 �
 #, fuzzy
 msgctxt "TrollDialogTable/3867767496704"
 msgid "Only he can jump!"
-msgstr "말만 뛸 수 있어!"
+msgstr "말만 뛰어넘을 수 있어!"
 
 #. nl: Ik dacht dat de tekening dat heel duidelijk maakte.
 #, fuzzy
@@ -1467,7 +1467,7 @@ msgstr "물론 내가 너에게 반칙을 할 리는 없겠지만..."
 #, fuzzy
 msgctxt "TrollDialogTable/10532155842560"
 msgid "They say only the horseguy can jump..."
-msgstr "말 녀석만 뛸 수 있다더군..."
+msgstr "말 녀석만 뛰어넘을 수 있다더군..."
 
 #. nl: Maar ik doe een aardige salto als het er op aan komt!
 #, fuzzy
