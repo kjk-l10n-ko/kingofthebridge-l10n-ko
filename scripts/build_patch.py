@@ -122,7 +122,8 @@ def patch_links(game, out):
 def patch_dll(game, out):
     """Steam achievement names/descriptions -> Korean (IL patch of Assembly-CSharp.dll, see scripts/patch_dll.py)."""
     import subprocess
-    subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "patch_dll.py"), "--src", src(game, DLL),
+    pristine = os.path.join(ROOT, "backup", DLL)  # the game's own copy may already be our patched one (installer)
+    subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "patch_dll.py"), "--src", pristine if os.path.exists(pristine) else src(game, DLL),
                     "--dst", os.path.join(out, DLL)], check=True)
 
 
